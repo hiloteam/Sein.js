@@ -1,0 +1,120 @@
+/**
+ * @File   : base.scss
+ * @Author : dtysky (dtysky@outlook.com)
+ * @Date   : 7/27/2019, 7:18:11 PM
+ * @Description:
+ */
+.demo-production {
+  width: 100%;
+  background: #fdfdfd;
+  height: calc(100vh - #{$content-top});
+  overflow: auto;
+  background: url(/assets/production/bg.png);
+  background-size: contain;
+
+  &-body {
+    width: 90%;
+    height: calc(100% - 213px);
+    @media (max-height: 800px) {
+      height: 100%;
+    }
+    margin: auto;
+    padding: 36px 0 36px 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  &-members {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 1vw;
+  }
+
+  &-member {
+    margin-right: 60px;
+    width: calc(50vh * 0.48);
+    flex-shrink: 0;
+
+    @media (min-height: 1080px) {
+      width: calc(540px * 0.48);
+    }
+
+    @media (max-height: 800px) {
+      width: calc(55vh * 0.48);
+    }
+
+    &-cover {
+      position: relative;
+      display: block;
+      width: calc(50vh * 0.48);
+      height: 50vh;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.2);
+      transition: .3s box-shadow ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (min-height: 1080px) {
+        width: calc(540px * 0.48);
+        height: 540px;
+      }
+
+      @media (max-height: 800px) {
+        width: calc(55vh * 0.48);
+        height: 55vh;
+      }
+
+      >div {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        transform: scale(1);
+        transition: .3s transform ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      >video {
+        max-width: 100%;
+      }
+    }
+
+    &-header {
+      margin: 24px 0 0 0 !important;
+      font-size: 18px !important;
+      color: #0C1A23 !important;
+
+      >.hana-tooltip {
+        display: inline-block;
+        margin-left: 4px;
+      }
+    }
+
+    &-qrcode {
+      display: block;
+      width: 96px;
+      height: 96px;
+    }
+
+    p {
+      word-break: break-all;
+      font-size: 14px !important;
+      color: #9599AF !important;
+      letter-spacing: 0.18px !important;
+      line-height: 1.4 !important;
+    }
+  }
+
+  .demo-footer {
+    @media (max-height: 800px) {
+      display: none;
+    }
+  }
+}

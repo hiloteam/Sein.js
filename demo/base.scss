@@ -1,0 +1,37 @@
+/**
+ * @File   : base.scss
+ * @Author : dtysky (dtysky@outlook.com)
+ * @Date   : 2018/9/25 下午3:56:28
+ * @Description:
+ */
+@import './config.scss';
+
+html, body, #container {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+
+.demo-bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  // background: url(/assets/bg.jpg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background: white;
+  background: #fafafa;
+}
+
+.demo-content {
+  position: relative;
+  top: $content-top;
+}
+
+a:hover {
+  text-decoration: none;
+}

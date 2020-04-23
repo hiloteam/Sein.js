@@ -1,0 +1,137 @@
+@import '../../config.scss';
+
+@keyframes banner-animation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.demo-overview {
+  width: 100%;
+  box-sizing: border-box;
+  height: calc(100vh - #{$content-top});
+  overflow: auto;
+  background: white;
+
+  &-banner {
+    position: relative;
+
+    >video {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    &-content {
+      position: absolute;
+      padding: 24px 16px;
+      width: 60%;
+      max-width: 320px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 8px;
+    }
+  }
+
+  &-logo {
+    display: block;
+    margin: auto;
+    width: 60%;
+    max-width: 160px;
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+
+    >a {
+      display: flex;
+      justify-content: center;
+      font-size: 16px;
+      width: 36%;
+      padding: 14px 10px;
+      text-decoration: none;
+      border: 2px solid white;
+      border-radius: 32px;
+      text-align: center;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:nth-child(1) {
+        background-color: $theme-color;
+        background: white;
+        color: $theme-color;
+      }
+
+      &:nth-child(2) {
+        color: white;
+      }
+    }
+  }
+
+  &-list {
+    display: flex;
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 10vh;
+    padding-bottom: 4vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &-container {
+      position: relative;
+      width: 100%;
+      background-color: #F8F9FD;
+    }
+  }
+
+  &-content {
+    position: relative;
+    width: 25%;
+    padding-right: 5%;
+    margin-bottom: 8vh;
+
+    >div {
+      position: absolute;
+      height: 64px;
+      width: 100%;
+
+      >img {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    
+    >h2 {
+      font-size: 20px;
+      line-height: 3;
+      margin: 0;
+      margin-top: 72px;;
+      color: #0D1A26;
+      font-weight: 500;
+    }
+
+    >p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+      color: #9599AF;
+      font-weight: 400;
+    }
+  }
+}

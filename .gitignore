@@ -1,0 +1,12 @@
+.idea
+.DS_Store
+.vscode
+node_modules
+*.log
+.awcache
+dist
+**/lib/*
+.rpt2_cache
+package-lock.json
+demo/assets/documents
+demo/pages/document/config.ts

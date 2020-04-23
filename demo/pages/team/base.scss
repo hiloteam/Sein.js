@@ -1,0 +1,120 @@
+@import '../../config.scss';
+
+.demo-contribution {
+  width: 100%;
+  background: #fdfdfd;
+  height: calc(100vh - #{$content-top});
+  overflow: auto;
+
+  $max-w: 1280px;
+
+  &-body {
+    width: 90%;
+    max-width: $max-w;
+    min-width: 300px;
+    margin: auto;
+    padding: 36px 0 12px 0;
+  }
+
+  &-leading {
+    line-height: 2;
+    font-size: 16px;
+  }
+
+  &-members {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  &-member {
+    position: relative;
+    width: calc(100vw * 0.9 * 0.23);
+    height: calc(100vw * 0.9 * 0.23 * 1.35);
+    @media (min-width: $max-w / 0.9) {
+      $w: $max-w * 0.23;
+      width: $w;
+      height: $w * 1.35;
+    }
+    min-width: 288px;
+    min-height: 388px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    background: url(/assets/contributors/bj.png);
+    background-size: cover;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    
+    &-content {
+      position: relative;
+      margin: auto;
+      width: 88%;
+      height: 85%;
+    }
+
+    &-bg {
+      position: absolute;
+      background: white;
+      top: 3%;
+      left: 3%;
+      width: 94%;
+      height: 94%;
+      transition: all .3s ease-in-out;
+      border-radius: 2px;
+    }
+
+    &-fg {
+      position: relative;
+      margin: 9% 6%;
+      padding: 20px 0;
+    }
+    
+    &-avatar {
+      display: block;
+      width: 25%;
+      min-width: 60px;
+      height: auto;
+      border-radius: 50%;
+      margin: auto;
+    }
+
+    &-header {
+      text-align: center;
+      margin-top: 10px;
+
+      >h3 {
+        font-size: 16px;
+        color: #0C1A23;
+        margin: 0;
+      }
+
+      >p {
+        font-size: 13px;
+        color: #9599AF;
+      }
+    }
+
+    &-link {
+      font-size: 15px;
+    }
+
+    &-desc {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 13px;
+      color: #9599AF;
+      width: 80%;
+      margin: 24px auto;
+    }
+
+    p {
+      word-break: break-all;
+      margin: 0;
+    }
+  }
+
+  &-member-blank {
+    background: none;
+    box-shadow: none;
+  }
+}

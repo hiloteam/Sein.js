@@ -1,0 +1,466 @@
+{
+  "extensionsUsed": [
+    "Sein_renderer",
+    "Sein_textureImprove",
+    "Sein_imageBasedLighting",
+    "KHR_lights_punctual",
+    "Sein_node"
+  ],
+  "extensionsRequired": [
+    "Sein_renderer",
+    "Sein_textureImprove",
+    "Sein_imageBasedLighting",
+    "KHR_lights_punctual",
+    "Sein_node"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3300,
+      "type": "VEC3",
+      "max": [
+        0.024178100749850273,
+        0.024178098887205124,
+        0.04518088698387146
+      ],
+      "min": [
+        -0.024178100749850273,
+        -0.024178111925721169,
+        -0.048133272677659988
+      ],
+      "name": "Cylinder.001-0-primitives-POSITION"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 3300,
+      "type": "VEC3",
+      "max": [
+        0.99879956245422363,
+        0.99879956245422363,
+        1.0
+      ],
+      "min": [
+        -0.99879956245422363,
+        -0.99879956245422363,
+        -1.0
+      ],
+      "name": "Cylinder.001-0-primitives-NORMAL"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 24,
+      "componentType": 5126,
+      "count": 3300,
+      "type": "VEC2",
+      "max": [
+        0.99703562259674072,
+        0.98382943868637085
+      ],
+      "min": [
+        0.00095501542091369629,
+        0.0025791823863983154
+      ],
+      "name": "Cylinder.001-0-primitives-TEXCOORD_0"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 32,
+      "componentType": 5126,
+      "count": 3300,
+      "type": "VEC2",
+      "max": [
+        0.99809372425079346,
+        0.998065710067749
+      ],
+      "min": [
+        0.00390625,
+        0.00390625
+      ],
+      "name": "Cylinder.001-0-primitives-TEXCOORD_1"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 40,
+      "componentType": 5126,
+      "count": 3300,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        0.99763327836990356,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.997614860534668,
+        -1.0
+      ],
+      "name": "Cylinder.001-0-primitives-TANGENT"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 8682,
+      "type": "SCALAR",
+      "max": [
+        3299.0
+      ],
+      "min": [
+        0.0
+      ],
+      "name": "Cylinder.001-0-indices-0"
+    }
+  ],
+  "asset": {
+    "generator": "Sein.js Toolkit",
+    "version": "2.0",
+    "exporterVersion": "1.1.7"
+  },
+  "buffers": [
+    {
+      "uri": "scene.bin",
+      "byteLength": 202188
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 24,
+      "byteLength": 184800,
+      "byteStride": 56,
+      "name": "Cylinder.001-0-primitives"
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 184824,
+      "byteLength": 17364,
+      "name": "Cylinder.001-0-indices"
+    }
+  ],
+  "images": [
+    {
+      "uri": "soda/textures/sodacantexture_color.tga_0.jpg",
+      "extras": {
+        "type": "LDR"
+      }
+    },
+    {
+      "uri": "soda/textures/sodacantexture_cavity.tga-orm_1-orm.jpg",
+      "extras": {
+        "type": "LDR"
+      }
+    },
+    {
+      "uri": "soda/textures/sodacantexture_normal.tga_2.jpg",
+      "extras": {
+        "type": "LDR",
+        "isNormalMap": true
+      }
+    },
+    {
+      "uri": "skybox/cayley_interior_4k.png",
+      "extras": {
+        "type": "HDR",
+        "format": "RGBD"
+      }
+    },
+    {
+      "uri": "seinjsunitytoolkit/shaders/brdflut.jpg",
+      "extras": {
+        "type": "LDR"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.75,
+        "roughnessFactor": 0.46299999952316284,
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "normalTexture": {
+        "index": 2
+      },
+      "name": "material_0",
+      "extensions": {
+        "Sein_imageBasedLighting": {
+          "light": 0,
+          "type": "ALL"
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3,
+            "TANGENT": 4
+          },
+          "indices": 5,
+          "material": 0
+        }
+      ],
+      "name": "Cylinder.001-0"
+    }
+  ],
+  "nodes": [
+    {
+      "matrix": [
+        0.116670549,
+        0.0,
+        0.9931707,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -0.9931707,
+        0.0,
+        0.116670549,
+        0.0,
+        1.64,
+        0.37,
+        6.61,
+        1.0
+      ],
+      "name": "Directional Light",
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        },
+        "Sein_node": {
+          "selfType": 2,
+          "childrenType": 1,
+          "className": "",
+          "tag": "",
+          "layer": 268435455,
+          "persistent": false,
+          "emitComponentsDestroy": true,
+          "updateOnEverTick": true,
+          "isStatic": false,
+          "skipThisNode": false
+        }
+      }
+    },
+    {
+      "matrix": [
+        35.368084,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -4.216203E-06,
+        35.36807,
+        0.0,
+        0.0,
+        -35.36807,
+        -4.216203E-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mesh": 0,
+      "name": "soda",
+      "extensions": {
+        "Sein_renderer": {
+          "castShadows": false,
+          "receiveShadows": false
+        },
+        "Sein_node": {
+          "selfType": 2,
+          "childrenType": 1,
+          "className": "",
+          "tag": "",
+          "layer": 268435455,
+          "persistent": false,
+          "emitComponentsDestroy": false,
+          "updateOnEverTick": true,
+          "isStatic": false,
+          "skipThisNode": false
+        }
+      }
+    }
+  ],
+  "samplers": [
+    {
+      "minFilter": 9985
+    },
+    {
+      "minFilter": 9985
+    },
+    {
+      "minFilter": 9985
+    },
+    {
+      "minFilter": 9985
+    },
+    {
+      "minFilter": 9985
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "extensions": {
+        "Sein_textureImprove": {
+          "isImageCanRelease": true,
+          "anisotropic": 1
+        }
+      }
+    },
+    {
+      "sampler": 1,
+      "source": 1,
+      "extensions": {
+        "Sein_textureImprove": {
+          "isImageCanRelease": true,
+          "anisotropic": 1
+        }
+      }
+    },
+    {
+      "sampler": 2,
+      "source": 2,
+      "extensions": {
+        "Sein_textureImprove": {
+          "isImageCanRelease": true,
+          "anisotropic": 1
+        }
+      }
+    },
+    {
+      "sampler": 3,
+      "source": 3,
+      "extensions": {
+        "Sein_textureImprove": {
+          "isImageCanRelease": true,
+          "anisotropic": 1
+        }
+      }
+    },
+    {
+      "sampler": 4,
+      "source": 4,
+      "extensions": {
+        "Sein_textureImprove": {
+          "isImageCanRelease": true,
+          "anisotropic": 1
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "Sein_renderer": {
+      "gammaCorrection": true,
+      "useHDR": false,
+      "exposure": 0.0
+    },
+    "Sein_imageBasedLighting": {
+      "lights": [
+        {
+          "diffuse": {
+            "type": "SH",
+            "intensity": 1.0,
+            "coefficients": [
+              [
+                0.9141316,
+                0.8070689,
+                0.811888456
+              ],
+              [
+                0.7107397,
+                0.46073097,
+                0.3955978
+              ],
+              [
+                0.138619483,
+                0.0435322039,
+                -0.0306349378
+              ],
+              [
+                0.858311534,
+                0.9581722,
+                1.12048972
+              ],
+              [
+                0.451573431,
+                0.4757163,
+                0.595075846
+              ],
+              [
+                0.260229528,
+                0.126845285,
+                0.054527346
+              ],
+              [
+                -0.129128441,
+                -0.09297898,
+                -0.08722593
+              ],
+              [
+                0.1433125,
+                0.108781211,
+                0.05559877
+              ],
+              [
+                0.0204065926,
+                0.201772541,
+                0.312384129
+              ]
+            ]
+          },
+          "specular": {
+            "type": "2D",
+            "intensity": 1.0,
+            "brdfLUT": {
+              "index": 4
+            },
+            "map": {
+              "index": 3
+            }
+          }
+        }
+      ]
+    },
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "name": "Directional Light",
+          "intensity": 6.0,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "type": "directional"
+        }
+      ]
+    }
+  }
+}

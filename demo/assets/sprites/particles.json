@@ -1,0 +1,30 @@
+{
+"frames": {
+	"flower": {
+		"frame": {"x":201, "y":0, "w":200, "h":200},
+		"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+		"sourceSize": {"w":200,"h":200}
+	},
+	"flower1": {
+		"frame": {"x":0, "y":201, "w":200, "h":200},
+		"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+		"sourceSize": {"w":200,"h":200}
+	},
+	"snow": {
+		"frame": {"x":201, "y":201, "w":200, "h":200},
+		"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+		"sourceSize": {"w":200,"h":200}
+	},
+	"star": {
+		"frame": {"x":0, "y":0, "w":200, "h":200},
+		"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+		"sourceSize": {"w":200,"h":200}
+	}
+
+},
+"meta": {
+	"image": "particles.png",
+	"size": {"w": 512, "h": 512},
+	"scale": "1"
+}
+}

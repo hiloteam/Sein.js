@@ -1,0 +1,382 @@
+{
+  "extensionsUsed": [
+    "KHR_materials_unlit",
+    "Sein_renderer",
+    "Sein_physicBody",
+    "Sein_node"
+  ],
+  "extensionsRequired": [
+    "KHR_materials_unlit",
+    "Sein_renderer",
+    "Sein_physicBody",
+    "Sein_node"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "name": "Cube-primitives-POSITION"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "name": "Cube-primitives-NORMAL"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 24,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC2",
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "name": "Cube-primitives-TEXCOORD_0"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 32,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC2",
+      "max": [
+        0.9966580867767334,
+        0.65283584594726563
+      ],
+      "min": [
+        0.0040557663887739182,
+        0.0040557663887739182
+      ],
+      "name": "Cube-primitives-TEXCOORD_1"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 40,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC4",
+      "max": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ],
+      "name": "Cube-primitives-TANGENT"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR",
+      "max": [
+        23.0
+      ],
+      "min": [
+        0.0
+      ],
+      "name": "Cube-indices-0"
+    }
+  ],
+  "asset": {
+    "generator": "Sein.js Unity Toolkit",
+    "version": "2.0",
+    "exporterVersion": "1.0.0"
+  },
+  "buffers": [
+    {
+      "uri": "scene.bin",
+      "byteLength": 1440
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 24,
+      "byteLength": 1344,
+      "byteStride": 56,
+      "name": "Cube-primitives"
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1368,
+      "byteLength": 72,
+      "name": "Cube-indices"
+    }
+  ],
+  "images": [
+    {
+      "uri": "morph/textures/base_0.jpg"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        }
+      },
+      "emissiveFactor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extensions": {
+        "KHR_materials_unlit": {}
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3,
+            "TANGENT": 4
+          },
+          "indices": 5,
+          "material": 0
+        }
+      ],
+      "name": "Cube"
+    }
+  ],
+  "nodes": [
+    {
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mesh": 0,
+      "name": "Cube",
+      "extensions": {
+        "Sein_renderer": {
+          "castShadows": true,
+          "receiveShadows": true,
+          "gammaCorrection": true
+        },
+        "Sein_node": {
+          "selfType": 2,
+          "childrenType": 1,
+          "className": "TestActor",
+          "tag": "",
+          "layer": 268435455,
+          "persistent": false,
+          "emitComponentsDestroy": true,
+          "updateOnEverTick": true,
+          "isStatic": false,
+          "skipThisNode": false,
+          "initOptions": {
+            "a": {
+              "type": "Int",
+              "value": 1
+            },
+            "b": {
+              "type": "Float",
+              "value": 2.0
+            },
+            "c": {
+              "type": "String",
+              "value": "sss"
+            },
+            "d": {
+              "type": "Bool",
+              "value": true
+            },
+            "e": {
+              "type": "Tex2D",
+              "value": {
+                "index": 0
+              }
+            },
+            "f": {
+              "type": "Vec2",
+              "value": [
+                2.0,
+                2.0
+              ]
+            },
+            "g": {
+              "type": "Vec3",
+              "value": [
+                1.0,
+                2.0,
+                3.0
+              ]
+            },
+            "h": {
+              "type": "Vec4",
+              "value": [
+                2.0,
+                3.0,
+                4.0,
+                5.0
+              ]
+            },
+            "i": {
+              "type": "Quat",
+              "value": [
+                2.0,
+                4.0,
+                3.0,
+                5.0
+              ]
+            },
+            "j": {
+              "type": "Color",
+              "value": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "k": {
+              "type": "Array",
+              "value": [
+                {
+                  "type": "Float",
+                  "value": 2.0
+                },
+                {
+                  "type": "Float",
+                  "value": 3.0
+                },
+                {
+                  "type": "Float",
+                  "value": 4.0
+                },
+                {
+                  "type": "Float",
+                  "value": 2.0
+                },
+                {
+                  "type": "Float",
+                  "value": 5.0
+                }
+              ]
+            },
+            "l": {
+              "type": "Mat4",
+              "value": [
+                2.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                4.0
+              ]
+            },
+            "m": {
+              "type": "Object",
+              "value": {
+                "x": {
+                  "type": "Int",
+                  "value": 3
+                },
+                "y": {
+                  "type": "Float",
+                  "value": 2.0
+                },
+                "z": {
+                  "type": "Color",
+                  "value": [
+                    0.0117120743,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "w": {
+                  "type": "Object",
+                  "value": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "samplers": [
+    {
+      "minFilter": 9985
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}

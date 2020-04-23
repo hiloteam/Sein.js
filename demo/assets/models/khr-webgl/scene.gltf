@@ -1,0 +1,245 @@
+{
+	"asset": {
+		"generator": "Sein.js Unity Toolkit",
+		"extras": {
+			"exporterVersion" : "0.8.0"
+		},
+		"version": "2.0"
+	},
+	"accessors": [
+		{
+			"bufferView": 2,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 24,
+			"max": [ 0.5, 0.5, 0.5 ],
+			"min": [ -0.5, -0.5, -0.5 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 288,
+			"componentType": 5126,
+			"count": 24,
+			"max": [ 1, 1, 1 ],
+			"min": [ -1, -1, -1 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 24,
+			"max": [ 1, 1 ],
+			"min": [ 0, 0 ],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 192,
+			"componentType": 5126,
+			"count": 24,
+			"max": [ 0.9966581, 0.6528358 ],
+			"min": [ 0.004055766, 0.004055766 ],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 3,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 24,
+			"max": [ 0, 0, 1, 1 ],
+			"min": [ -1, 0, -1, 1 ],
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 0,
+			"componentType": 5123,
+			"count": 36,
+			"max": [ 23 ],
+			"min": [ 0 ],
+			"type": "SCALAR"
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 1416,
+			"uri": "scene.bin"
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 72,
+			"target": 34963,
+			"byteOffset": 1344
+		},
+		{
+			"buffer": 0,
+			"byteLength": 384,
+			"target": 34962,
+			"byteStride": 8,
+			"byteOffset": 0
+		},
+		{
+			"buffer": 0,
+			"byteLength": 576,
+			"target": 34962,
+			"byteStride": 12,
+			"byteOffset": 384
+		},
+		{
+			"buffer": 0,
+			"byteLength": 384,
+			"target": 34962,
+			"byteStride": 16,
+			"byteOffset": 960
+		}
+	],
+	"extensionsRequired": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"KHR_techniques_webgl"
+	],
+	"extensionsUsed": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"KHR_techniques_webgl"
+	],
+	"images": [
+		{
+			"uri": "Assets/paradise-l.jpg"
+		}
+	],
+	"extensions": {
+		"KHR_techniques_webgl": {
+			"programs": [
+				{
+					"vertexShader": 0,
+					"fragmentShader": 1
+				}
+			],
+			"shaders": [
+				{
+					"type": 35633,
+					"uri": "Material/UnlitGLSLShader/vertex.glsl"
+				},
+				{
+					"type": 35632,
+					"uri": "Material/UnlitGLSLShader/fragment.glsl"
+				}
+			],
+			"techniques": [
+				{
+					"program": 0,
+					"attributes": {
+						"a_position": {
+							"semantic": "POSITION"
+						},
+						"a_normal": {
+							"semantic": "NORMAL"
+						},
+						"a_texcoord0": {
+							"semantic": "TEXCOORD_0"
+						},
+						"a_texcoord1": {
+							"semantic": "TEXCOORD_1"
+						}
+					},
+					"uniforms": {
+						"u_modelViewMatrix": {
+							"semantic": "MODELVIEW",
+							"type": 35676
+						},
+						"u_projectionMatrix": {
+							"semantic": "PROJECTION",
+							"type": 35676
+						},
+						"u_modelViewProjectionMatrix": {
+							"semantic": "MODELVIEWPROJECTION",
+							"type": 35676
+						},
+						"u_normalMatrix": {
+							"semantic": "MODELVIEWINVERSETRANSPOSE",
+							"type": 35675
+						},
+						"u_diffuseMap": {
+							"type": 35678
+						}
+					}
+				}
+			]
+		}
+	},
+	"materials": [
+		{
+			"extensions": {
+				"KHR_techniques_webgl": {
+					"technique": 0,
+					"values": {
+						"u_diffuseMap" : {
+							"index" : 0,
+							"texCoord" : 0
+						}
+					}
+				}
+			},
+			"doubleSided": false,
+			"name": "BoxMaterial"
+		}
+	],
+	"meshes": [
+		{
+			"name": "Cube",
+			"primitives": [
+				{
+					"attributes": {
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2,
+						"TEXCOORD_1": 3,
+						"TANGENT": 4
+					},
+					"indices": 5,
+					"material": 0,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "Cube",
+			"mesh": 0,
+			"matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+		}
+	],
+	"samplers": [
+		{
+			"magFilter": 9729,
+			"minFilter": 9985,
+			"wrapS": 10497,
+			"wrapT": 10497
+		}
+	],
+	"scenes": [
+		{
+			"name":"defaultScene",
+			"nodes": [
+				0
+			]
+		}
+	],
+	"scene": 0,
+	"textures": [
+		{
+			"sampler": 0,
+			"source": 0
+		}
+	]
+}

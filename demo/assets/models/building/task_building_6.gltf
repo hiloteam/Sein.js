@@ -1,0 +1,238 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 10461,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 10461,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 10461,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 10461,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 14577,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 3234,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "generator": "Sein.js Unity Toolkit",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 83688
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 83688,
+      "byteLength": 125532
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 209220,
+      "byteLength": 167376
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 376596,
+      "byteLength": 125532
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 502128,
+      "byteLength": 29154,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 531282,
+      "byteLength": 6468,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "task_building_6.bin",
+      "byteLength": 537750
+    }
+  ],
+  "extensionsUsed": [
+    "Sein_physicBody",
+    "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [
+    "Sein_physicBody",
+    "KHR_materials_unlit"
+  ],
+  "images": [
+    {
+      "uri": "fav_center_lv6a_diffuse.png"
+    },
+    {
+      "uri": "fav_center_lv6b_diffuse.png"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "POSITION": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "TEXCOORD_0": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "fav_lv6_center"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "task_building_6",
+      "extensions": {
+        "Sein_physicBody": {
+          "colliders": [
+            {
+              "type": "BOX",
+              "center": [
+                -0.004790604,
+                0.392407417,
+                -5.69359446
+              ],
+              "size": [
+                1.34396207,
+                0.8429718,
+                3.66539288
+              ]
+            },
+            {
+              "type": "BOX",
+              "center": [
+                -5.67816544,
+                0.40718174,
+                0.0241055489
+              ],
+              "size": [
+                3.64876938,
+                0.872520447,
+                1.39013386
+              ]
+            },
+            {
+              "type": "BOX",
+              "center": [
+                5.816329,
+                1.5448122,
+                -0.020219326
+              ],
+              "size": [
+                3.53057861,
+                3.14778137,
+                5.79291248
+              ]
+            },
+            {
+              "type": "BOX",
+              "center": [
+                0.128179789,
+                4.411049,
+                0.06842756
+              ],
+              "size": [
+                8.051548,
+                8.880255,
+                7.92042828
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9985,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "materials": [
+    {
+      "name": "fav_center_lv6a_diffuse",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [1.0, 1.0, 1.0, 1.0],
+        "baseColorTexture": {"index": 0}
+      },
+      "extensions": {
+          "KHR_materials_unlit": {}
+      }
+    },
+    {
+      "name": "fav_center_lv6b_diffuse",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [1.0, 1.0, 1.0, 1.0],
+        "baseColorTexture": {"index": 1}
+      },
+      "extensions": {
+          "KHR_materials_unlit": {}
+      }
+    }
+  ]
+}

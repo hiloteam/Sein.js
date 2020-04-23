@@ -1,0 +1,182 @@
+{
+	"asset": {
+		"generator": "Sein.js Unity Toolkit",
+		"extras": {
+			"exporterVersion" : "0.8.0"
+		},
+		"version": "2.0"
+	},
+	"accessors": [
+		{
+			"bufferView": 2,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 42,
+			"max": [ 4.789173, 2.137824, 4.789176 ],
+			"min": [ -4.789172, -2.560953, -4.789175 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 504,
+			"componentType": 5126,
+			"count": 42,
+			"max": [ 0.970494, -0.2411251, 0.970494 ],
+			"min": [ -0.970494, -0.241126, -0.970494 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 42,
+			"max": [ 0.9999529, 0.976787 ],
+			"min": [ 4.667044E-05, 0.03527939 ],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 3,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 42,
+			"max": [ 1, 0.03703752, 1, -1 ],
+			"min": [ -1, -0.03703745, -1, -1 ],
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 0,
+			"componentType": 5123,
+			"count": 120,
+			"max": [ 41 ],
+			"min": [ 0 ],
+			"type": "SCALAR"
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 2256,
+			"uri": "building_fx.bin"
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 240,
+			"target": 34963,
+			"byteOffset": 2016
+		},
+		{
+			"buffer": 0,
+			"byteLength": 336,
+			"target": 34962,
+			"byteStride": 8,
+			"byteOffset": 0
+		},
+		{
+			"buffer": 0,
+			"byteLength": 1008,
+			"target": 34962,
+			"byteStride": 12,
+			"byteOffset": 336
+		},
+		{
+			"buffer": 0,
+			"byteLength": 672,
+			"target": 34962,
+			"byteStride": 16,
+			"byteOffset": 1344
+		}
+	],
+	"extensionsRequired": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"KHR_materials_unlit"
+	],
+	"extensionsUsed": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"KHR_materials_unlit"
+	],
+	"images": [
+		{
+			"uri": "building_fx/textures/glow_lineb_0.jpg"
+		}
+	],
+	"materials": [
+		{
+			"extensions": {
+				"Sein_customMaterial": {
+					"className": "BuildingFxMaterial",
+					"cloneForInst": true,
+					"uniforms": {
+						"u_diffuseMap": {
+							"type": 35678,
+							"value": {"index": 0}
+						},
+						"u_opacity": {
+							"type": 5126,
+							"value": 0
+						}
+					}
+				}
+			},
+			"emissiveFactor": [0, 0, 0],
+			"alphaMode": "BLEND",
+			"doubleSided": true,
+			"name": "glow_lineb_0"
+		}
+	],
+	"meshes": [
+		{
+			"name": "fx_2_0_0",
+			"primitives": [
+				{
+					"attributes": {
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2,
+						"TANGENT": 3
+					},
+					"indices": 4,
+					"material": 0,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "building_fx",
+			"mesh": 0,
+			"matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+		}
+	],
+	"samplers": [
+		{
+			"magFilter": 9729,
+			"minFilter": 9985,
+			"wrapS": 10497,
+			"wrapT": 10497
+		}
+	],
+	"scenes": [
+		{
+			"name":"defaultScene",
+			"nodes": [
+				0
+			]
+		}
+	],
+	"scene": 0,
+	"textures": [
+		{
+			"sampler": 0,
+			"source": 0
+		}
+	]
+}

@@ -1,0 +1,70 @@
+/**
+ * @File   : base.scss
+ * @Author : dtysky (dtysky@outlook.com)
+ * @Date   : 7/27/2019, 1:35:15 PM
+ * @Description:
+ */
+.demo-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #0D1A26;
+  padding: 60px 120px 48px 120px;
+
+  @media (max-height: 800px) {
+    padding: 30px 120px 24px 120px;
+  }
+
+  &-item {
+
+    >h3 {
+      font-size: 16px;
+      color: white;
+      font-weight: normal;
+      margin: 0;
+
+      >img {
+
+      }
+    }
+
+    >div {
+      margin-top: 36px;
+
+      >a, >p, >div {
+        margin-top: 0;
+        margin-bottom: 12px;
+      }
+    }
+
+    img, a {
+      display: block;
+    }
+
+    a, p {
+      font-size: 13px;
+      color: #9599AF;
+      text-decoration: none;
+      font-weight: 400;
+      transition: .3s color ease-in-out;
+    }
+
+    a:hover {
+      color: lighten($color: #9599AF, $amount: 5);
+    }
+
+    .hana-tooltip {
+      cursor: pointer;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &-qrcode {
+      width: 192px;
+      height: 192px;
+      border-radius: 6px;
+    }
+  }
+}

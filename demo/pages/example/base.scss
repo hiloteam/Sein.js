@@ -1,0 +1,90 @@
+@import '../../config.scss';
+
+.demo-example {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 24px 0;
+  margin: 0 auto;
+  height: calc(100vh - #{$content-top} - 48px);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .hana-sidebar {
+    top: $content-top;
+    width: 280px;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+  }
+
+  &-sidebar-content {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    margin-top: 24px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &-content {
+    position: relative;
+    width: calc(100% - 360px);
+    margin-left: 300px;
+    min-width: 720px;
+  
+    >div {
+      >.demo-markdown {
+        h2 {
+          margin-top: 0;
+        }
+  
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.example-game {
+  &-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-content {
+    position: relative;
+    width: 0;
+    height: 0;
+    padding: 26% 50%;
+  }
+
+  &-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(.6 * 255, .8 * 255, .9 * 255);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  &-desc {
+    margin-top: 16px;
+    background: rgba(255, 255, 255, .9);
+  }
+  
+  &-code {
+    margin-top: 16px;
+    background: rgba(255, 255, 255, .9);
+  }
+}

@@ -1,0 +1,24 @@
+/**
+ * @File   : base.scss
+ * @Author : dtysky (dtysky@outlook.com)
+ * @Date   : 7/27/2019, 7:18:11 PM
+ * @Description:
+ */
+@import '../../config.scss';
+
+.demo-future {
+	width: 100%;
+	background: #fdfdfd;
+	padding-top: 24px;
+	height: calc(100vh - #{$content-top});
+	overflow: auto;
+	box-sizing: border-box;
+
+	.markdown-body {
+		width: 80%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 12px;
+		padding-bottom: 48px;
+	}
+}

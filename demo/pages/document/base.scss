@@ -1,0 +1,11 @@
+@import '../../config.scss';
+
+.demo-document {
+  position: fixed;
+  width: 100%;
+  height: calc(100% - #{$content-top});
+  overflow: auto;
+  margin: 0;
+  border: 0;
+  background: rgba(255, 255, 255, .9);
+}

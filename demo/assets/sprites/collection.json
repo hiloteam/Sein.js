@@ -1,0 +1,19 @@
+{
+  "frames": {
+    "checked": {
+      "frame": {"x":0, "y":0, "w":60, "h":60},
+      "spriteSourceSize": {"x":0,"y":0,"w":60,"h":60},
+      "sourceSize": {"w":60,"h":60}
+    },
+    "unchecked": {
+      "frame": {"x":62, "y":0, "w":60, "h":60},
+      "spriteSourceSize": {"x":0,"y":0,"w":60,"h":60},
+      "sourceSize": {"w":60,"h":60}
+    }
+  },
+  "meta": {
+    "image": "collection.png",
+    "size": {"w": 128, "h": 64},
+    "scale": "1"
+  }
+}

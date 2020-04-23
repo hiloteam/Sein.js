@@ -1,0 +1,477 @@
+{
+	"asset": {
+		"generator": "Sein.js Toolkit",
+		"extras": {
+			"exporterVersion" : "0.90"
+		},
+		"version": "2.0"
+	},
+	"accessors": [
+		{
+			"bufferView": 2,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 12840,
+			"max": [ 0.03245254, 0.2052799, 0.03231576 ],
+			"min": [ -0.03245254, -0.0002848897, -0.03231576 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 154080,
+			"componentType": 5126,
+			"count": 12840,
+			"max": [ 0.9983891, 1, 0.9993332 ],
+			"min": [ -0.9988331, -0.9995642, -0.9987558 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 12840,
+			"max": [ 0.9948505, 0.9898412 ],
+			"min": [ -0.0001495332, 0.008381814 ],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 3,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 12840,
+			"max": [ 1, 1, 0.9998614, 1 ],
+			"min": [ -0.9994016, -0.6995921, -0.9999972, -1 ],
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 0,
+			"componentType": 5123,
+			"count": 9210,
+			"max": [ 1658 ],
+			"min": [ 0 ],
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 18420,
+			"componentType": 5123,
+			"count": 3456,
+			"max": [ 2219 ],
+			"min": [ 905 ],
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 25332,
+			"componentType": 5123,
+			"count": 11610,
+			"max": [ 4279 ],
+			"min": [ 2220 ],
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 308160,
+			"componentType": 5126,
+			"count": 598,
+			"max": [ 0.01644918, 0.02092873, 0.01654142 ],
+			"min": [ -0.01644918, -1.051331E-05, -0.01654141 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 315336,
+			"componentType": 5126,
+			"count": 598,
+			"max": [ 0.9979221, 0.9999918, 0.9999428 ],
+			"min": [ -0.9996714, -0.8490009, -0.999267 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 102720,
+			"componentType": 5126,
+			"count": 598,
+			"max": [ 0.2606385, 0.9947098 ],
+			"min": [ 0.006969368, 0.734252 ],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 3,
+			"byteOffset": 205440,
+			"componentType": 5126,
+			"count": 598,
+			"max": [ 0.8016064, 0.99999, 0.9999844, 1 ],
+			"min": [ -0.9166947, -0.9982345, -0.8317361, 1 ],
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 48552,
+			"componentType": 5123,
+			"count": 3198,
+			"max": [ 597 ],
+			"min": [ 0 ],
+			"type": "SCALAR"
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 699972,
+			"uri": "scene.bin"
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 54948,
+			"target": 34963,
+			"byteOffset": 645024
+		},
+		{
+			"buffer": 0,
+			"byteLength": 107504,
+			"target": 34962,
+			"byteStride": 8,
+			"byteOffset": 0
+		},
+		{
+			"buffer": 0,
+			"byteLength": 322512,
+			"target": 34962,
+			"byteStride": 12,
+			"byteOffset": 107504
+		},
+		{
+			"buffer": 0,
+			"byteLength": 215008,
+			"target": 34962,
+			"byteStride": 16,
+			"byteOffset": 430016
+		}
+	],
+	"extensionsRequired": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"Sein_renderer",
+		"Sein_imageBasedLighting",
+		"KHR_lights_punctual",
+		"KHR_materials_pbrSpecularGlossiness",
+		"Sein_cubeTexture"
+	],
+	"extensionsUsed": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"Sein_renderer",
+		"Sein_imageBasedLighting",
+		"KHR_lights_punctual",
+		"KHR_materials_pbrSpecularGlossiness",
+		"Sein_cubeTexture"
+	],
+	"images": [
+		{
+			"uri": "seinjsunitytoolkit/shaders/brdflut.jpg"
+		},
+		{
+			"uri": "reflection/reflectionprobe-00.png"
+		},
+		{
+			"uri": "reflection/reflectionprobe-01.png"
+		},
+		{
+			"uri": "reflection/reflectionprobe-02.png"
+		},
+		{
+			"uri": "reflection/reflectionprobe-03.png"
+		},
+		{
+			"uri": "reflection/reflectionprobe-04.png"
+		},
+		{
+			"uri": "reflection/reflectionprobe-05.png"
+		},
+		{
+			"uri": "water/textures/__550ml_0.jpg"
+		}
+	],
+	"extensions": {
+		"Sein_imageBasedLighting": {
+			"lights": [
+				{
+					"diffuse": {
+						"type": "SH",
+						"intensity": 4,
+						"coefficients": [
+							[0.6311702,0.549068,0.5538794],
+							[0.5158914,0.3165061,0.2703427],
+							[0.5838098,0.6537053,0.7641057],
+							[0.09059543,0.02746663,-0.0213355],
+							[0.1747932,0.08355184,0.03653544],
+							[0.3098305,0.3238534,0.40491],
+							[0.04696504,0.1008179,0.1363642],
+							[0.09405253,0.07437436,0.03810557],
+							[-0.1359293,-0.02563127,0.01732188]
+						]
+					},
+					"specular": {
+						"type": "CUBE",
+						"intensity": 4,
+						"brdfLUT": {"index": 0},
+						"map": {"index": 0}
+					}
+				}
+
+			]
+		},
+		"Sein_cubeTexture": {
+      "textures": [
+        {
+          "images": [1,2,3,4,5,6],
+          "sampler": 1
+        }
+      ]
+    }
+	},
+	"materials": [
+		{
+			"pbrMetallicRoughness": {
+				"baseColorFactor": [1, 1, 1, 0.05490196],
+				"metallicFactor": 1,
+				"roughnessFactor": 0.129
+				},
+				"extensions": {
+					"Sein_imageBasedLighting": {
+						"type": "ALL",
+						"light": 0
+					}
+
+			},
+			"alphaMode": "BLEND",
+			"doubleSided": false,
+			"name": "pingshen_0"
+		},
+		{
+			"extensions": {
+				"KHR_materials_pbrSpecularGlossiness": {
+					"diffuseTexture" : {
+						"index" : 1,
+						"texCoord" : 0
+					},
+					"diffuseFactor": [0.764151, 0.764151, 0.764151, 1],
+					"specularFactor": [0.02830189, 0.02830189, 0.02830189],
+					"glossinessFactor": 1					}
+,
+				"Sein_imageBasedLighting": {
+					"type": "ALL",
+					"light": 0
+				}
+
+			},
+			"doubleSided": false,
+			"name": "__550ml_1"
+		},
+		{
+			"extensions": {
+				"Sein_customMaterial": {
+					"className": "EnhancedPBRMaterial",
+					"cloneForInst": false,
+					"renderOrder": 3000,
+					"uniforms": {
+						"unlit": {
+							"type": 5126,
+							"value": 0
+						},
+						"workflow": {
+							"type": 5126,
+							"value": 0
+						},
+						"metallic": {
+							"type": 5126,
+							"value": 0.518
+						},
+						"roughness": {
+							"type": 5126,
+							"value": 0
+						},
+						"glossiness": {
+							"type": 5126,
+							"value": 1
+						},
+						"refractionOffsetX": {
+							"type": 5126,
+							"value": -0.051
+						},
+						"refractionOffsetY": {
+							"type": 5126,
+							"value": -0.071
+						},
+						"baseColor": {
+							"type": 35666,
+							"value": [1, 1, 1, 0.251]
+						},
+						"specular": {
+							"type": 35666,
+							"value": [0.5, 0.5, 0.5, 1]
+						},
+						"emission": {
+							"type": 35666,
+							"value": [0, 0, 0, 1]
+						}
+					}
+				},
+					"Sein_imageBasedLighting": {
+						"type": "ALL",
+						"light": 0
+					}
+			},
+			"alphaMode": "BLEND",
+			"doubleSided": false,
+			"name": "material_2"
+		}
+	],
+	"meshes": [
+		{
+			"name": "bottle-0",
+			"primitives": [
+				{
+					"attributes":{
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2,
+						"TANGENT": 3
+					},
+					"indices": 4,
+					"material": 0,
+					"mode": 4
+				},
+				{
+					"attributes":{
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2,
+						"TANGENT": 3
+					},
+					"indices": 5,
+					"material": 1,
+					"mode": 4
+				},
+				{
+					"attributes":{
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2,
+						"TANGENT": 3
+					},
+					"indices": 6,
+					"material": 2,
+					"mode": 4
+				}
+			]
+		},
+		{
+			"name": "bottleCap-1",
+			"primitives": [
+				{
+					"attributes":{
+						"POSITION": 7,
+						"NORMAL": 8,
+						"TEXCOORD_0": 9,
+						"TANGENT": 10
+					},
+					"indices": 11,
+					"material": 1,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "bottle",
+			"mesh": 0,
+			"rotation": [0, 0, 0, 1]
+,
+			"extensions": {
+				"Sein_renderer": {
+					"castShadows": true,
+					"receiveShadows": true,
+					"gammaCorrection": true
+				}
+			}
+		},
+		{
+			"name": "water",
+			"children": [
+				0,
+				2
+			],
+			"matrix": [5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 1]
+,
+			"extensions": {
+				"Sein_node": {
+					"selfType": 2,
+					"childrenType": 1,
+					"className": "",
+					"tag": "",
+					"layer": 268435455,
+					"persistent": false,
+					"emitComponentsDestroy": true,
+					"updateOnEverTick": true,
+					"isStatic": false,
+					"skipThisNode": false
+				}
+			}
+		},
+		{
+			"name": "bottleCap",
+			"mesh": 1,
+			"translation": [ -0.0009066163, 0.2049174, -0.0004816108],
+			"rotation": [0, 0, 0, 1]
+,
+			"extensions": {
+				"Sein_renderer": {
+					"castShadows": true,
+					"receiveShadows": true,
+					"gammaCorrection": true
+				}
+			}
+		}
+	],
+	"samplers": [
+		{
+			"magFilter": 9729,
+			"minFilter": 9985,
+			"wrapS": 10497,
+			"wrapT": 10497
+		},
+		{
+      "minFilter": 9985,
+      "WrapS": 33071,
+      "WrapT": 33071
+    }
+	],
+	"scenes": [
+		{
+			"name":"defaultScene",
+			"nodes": [
+				1
+			]
+		}
+	],
+	"scene": 0,
+	"textures": [
+		{
+			"sampler": 0,
+			"source": 0
+		},
+		{
+			"sampler": 0,
+			"source": 7
+		}
+	]
+}

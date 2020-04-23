@@ -1,0 +1,283 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 447,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 447,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 447,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 447,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 1332,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5123,
+      "count": 708,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "generator": "Sein.js Unity Toolkit",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 3576
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3576,
+      "byteLength": 5364
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8940,
+      "byteLength": 7152
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 16092,
+      "byteLength": 5364
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 21456,
+      "byteLength": 2664,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 24120,
+      "byteLength": 4096
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 28216,
+      "byteLength": 6144
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 34360,
+      "byteLength": 8192
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 42552,
+      "byteLength": 6144
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 48696,
+      "byteLength": 1416,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "ship.bin",
+      "byteLength": 50112
+    }
+  ],
+  "extensionsUsed": [
+    "Sein_node",
+    "Sein_physicBody",
+    "KHR_materials_unlit"
+  ],
+  "images": [
+    {
+      "uri": "fav_ship_diffuse.png"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "POSITION": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "fav_ship_body"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 5,
+            "NORMAL": 6,
+            "TANGENT": 7,
+            "POSITION": 8
+          },
+          "indices": 9,
+          "material": 0
+        }
+      ],
+      "name": "fav_ship_paddle"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        -9.536743e-7,
+        0.0005197525,
+        0.2171528
+      ],
+      "name": "ship_body",
+      "extensions": {}
+    },
+    {
+      "mesh": 1,
+      "translation": [
+        9.536743e-7,
+        3.9062438,
+        2.58645344
+      ],
+      "name": "ship_paddle",
+      "extensions": {}
+    },
+    {
+      "children": [
+        0,
+        1
+      ],
+      "name": "ship",
+      "extensions": {
+        "Sein_physicBody": {
+          "colliders": [
+            {
+              "type": "BOX",
+              "size": [
+                4.423439,
+                5.41333,
+                7.066535
+              ],
+              "offset": [
+                -0.2589836,
+                2.206665,
+                0.788444042
+              ],
+              "isTrigger": true
+            }
+          ],
+          "mass": 1,
+          "friction": 0,
+          "restitution": 0,
+          "unControl": false,
+          "physicStatic": true,
+          "sleeping": false
+        },
+        "Sein_node": {
+          "className": "ShipActor",
+          "selfType": 2,
+          "childrenType": 1,
+          "tag": "",
+          "persistent": false,
+          "emitComponentsDestroy": true,
+          "updateOnEverTick": true,
+          "skipThisNode": false
+        }
+      }
+    }
+  ],
+  "skins": [],
+  "cameras": [],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        2
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9985,
+      "wrapS": 10497,
+      "wrapT": 10497,
+      "interpolation": "LINEAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "fav_ship_diffuse",
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    }
+  ],
+  "extensionsRequired": [
+    "Sein_node",
+    "Sein_physicBody",
+    "KHR_materials_unlit"
+  ]
+}

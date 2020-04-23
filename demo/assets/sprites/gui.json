@@ -1,0 +1,30 @@
+{
+  "frames": {
+    "checked": {
+      "frame": {"x":0, "y":132, "w":64, "h":64},
+      "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+      "sourceSize": {"w":64,"h":64}
+    },
+    "unchecked": {
+      "frame": {"x":0, "y":66, "w":64, "h":64},
+      "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+      "sourceSize": {"w":64,"h":64}
+    },
+    "selected": {
+      "frame": {"x":0, "y":0, "w":64, "h":64},
+      "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+      "sourceSize": {"w":64,"h":64}
+    },
+    "unselected": {
+      "frame": {"x":66, "y":0, "w":64, "h":64},
+      "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+      "sourceSize": {"w":64,"h":64}
+    }
+
+  },
+  "meta": {
+    "image": "gui.png",
+    "size": {"w": 256, "h": 256},
+    "scale": "1"
+  }
+}

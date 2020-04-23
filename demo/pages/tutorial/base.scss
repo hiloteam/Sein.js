@@ -1,0 +1,88 @@
+@import '../../config.scss';
+
+.demo-tutorial {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1px 0;
+  margin: 0 auto;
+  height: calc(100vh - #{$content-top} - 2px);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .hana-sidebar {
+    top: $content-top;
+    width: 280px;
+    // background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(#fff, .95);
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+  }
+
+  &-sidebar-content {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    margin-top: 24px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &-content {
+    position: relative;
+    width: calc(100% - 350px);
+    margin-left: 290px;
+    min-width: 720px;
+    min-height: calc(100% - #{$content-top});
+    background-color: rgba(#fff, .95);
+    padding: 24px 6% 24px 2%;
+    border-radius: 4px;
+  
+    >.demo-markdown-element .markdown-body {
+      h2, h3, h4, h5 {
+        margin-top: 36px;
+      }
+
+      p {
+        line-height: 2;
+      }
+      
+      p, li, a, blockquote {
+        font-size: 15px;
+      }
+
+      blockquote {
+        $color: rgb(248, 99, 99);
+        color: $color;
+        border-left-color: rgba($color, .8);
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      pre {
+        // background: #f4f4f4;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        max-height: 480px;
+        overflow: auto;
+      }
+
+      img {
+        max-width: 600px;
+
+        @media (max-width: 800px)  {
+          max-width: 80%;  
+        }
+      }
+    }
+  }
+}

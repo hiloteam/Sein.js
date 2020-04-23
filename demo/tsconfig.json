@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es2015", "dom"],
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "components/*": ["./components/*"],
+      "seinjs": ["../lib/seinjs.d.ts"],
+      "seinjs-dom-hud": ["../extensions/DomHUD/src/index.ts"],
+      "seinjs-react-hud": ["../extensions/ReactHUD/src/index.ts"],
+      "seinjs-debug-tools": ["../extensions/DebugTools/src/index.ts"],
+      "seinjs-camera-controls/*": ["../extensions/CameraControls/src/*"],
+      "seinjs-camera-controls": ["../extensions/CameraControls/src/index.ts"],
+      "seinjs-gpu-particle-system": ["../extensions/GPUParticleSystem/src/index.ts"],
+      "seinjs-post-processing-system": ["../extensions/PostProcessingSystem/src/index.ts"],
+      "seinjs-audio": ["../extensions/Audio/src/index.ts"],
+      "seinjs-gui": ["../extensions/GUI/src/index.ts"],
+      "seinjs-materials/*": ["../materials/*"]
+    }
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx"
+  ]
+}

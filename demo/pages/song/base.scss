@@ -1,0 +1,22 @@
+/**
+ * @File   : base.scss
+ * @Author : dtysky (dtysky@outlook.com)
+ * @Date   : 6/30/2019, 4:57:02 PM
+ * @Description:
+ */
+@import '../../config.scss';
+
+.demo-song {
+  width: 100%;
+  background: #fdfdfd;
+  height: calc(100vh - #{$content-top});
+  overflow: auto;
+
+  .markdown-body {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+    padding-bottom: 48px;
+  }
+}

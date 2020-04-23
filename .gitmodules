@@ -1,0 +1,30 @@
+[submodule "materials"]
+	path = materials
+	url = git@github.com:hiloteam/seinjs-materials.git
+[submodule "Hilo3d"]
+	path = Hilo3d
+	url = git@github.com:hiloteam/Hilo3d.git
+[submodule "extensions/Audio"]
+	path = extensions/Audio
+	url = git@github.com:hiloteam/seinjs-audio.git
+[submodule "extensions/CameraControls"]
+	path = extensions/CameraControls
+	url = git@github.com:hiloteam/seinjs-camera-controls.git
+[submodule "extensions/DebugTools"]
+	path = extensions/DebugTools
+	url = git@github.com:hiloteam/seinjs-debug-tools.git
+[submodule "extensions/DomHUD"]
+	path = extensions/DomHUD
+	url = git@github.com:hiloteam/seinjs-dom-hud.git
+[submodule "extensions/GPUParticleSystem"]
+	path = extensions/GPUParticleSystem
+	url = git@github.com:hiloteam/seinjs-gpu-particle-system.git
+[submodule "extensions/GUI"]
+	path = extensions/GUI
+	url = git@github.com:hiloteam/seinjs-gui.git
+[submodule "extensions/ReactHUD"]
+	path = extensions/ReactHUD
+	url = git@github.com:hiloteam/seinjs-react-hud.git
+[submodule "extensions/PostProcessingSystem"]
+	path = extensions/PostProcessingSystem
+	url = git@github.com:hiloteam/seinjs-post-processing-system.git

@@ -1,0 +1,103 @@
+/**
+ * @File   : base.scss
+ * @Author : dtysky (dtysky@outlook.com)
+ * @Date   : 11/3/2018, 4:11:48 PM
+ * @Description:
+ */
+@import 'hana-ui/dist/styles/config.scss';
+@import '../../config.scss';
+
+.demo-topbar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: $topbar-height;
+  background: rgba(255, 255, 255, 1);
+  border-bottom: solid 1px #F5F8FE;
+
+  &:after {
+    pointer-events: none;
+  }
+
+  &-container {
+    position: relative;
+    // background: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+
+  &-left {
+    display: flex;
+    align-items: center;
+  }
+
+  &-logo {
+    >img {
+      $height: 28px;
+      display: block;
+      width: $height / 160 * 524;
+      height: $height;
+      margin-top: 4px;
+    }
+
+    text-decoration: none;
+
+    >h1 {
+      font-size: 28px;
+      color: #000;
+    }
+  }
+
+  &-lang {
+  }
+
+  &-right {
+
+  }
+
+  .hana-menu {
+    background: none;
+  }
+
+  .hana-menu-linear.hana-menu-horizonal &-item.hana-menuitem {
+    border-bottom: none;
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  &-item {
+    text-align: center;
+    display: flex;
+    // color: $text-color;
+    transition: all .3s ease-in-out;
+
+    // &:hover {
+    //   color: $primary-color;
+    // }
+
+    &-icon.hanaicon {
+      font-size: 16px;
+    }
+
+    &-link {
+      font-size: 15px;
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &-en &-item {
+    margin: 8px;
+  }
+
+  &-cn &-item {
+    margin: 8px;
+  }
+}
+

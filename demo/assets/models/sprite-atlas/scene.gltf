@@ -1,0 +1,234 @@
+{
+  "extensionsUsed": [
+    "Sein_renderer",
+    "Sein_ambientLight",
+    "Sein_sprite",
+    "Sein_atlas",
+    "Sein_node"
+  ],
+  "extensionsRequired": [
+    "Sein_renderer",
+    "Sein_ambientLight",
+    "Sein_sprite",
+    "Sein_atlas",
+    "Sein_node"
+  ],
+  "asset": {
+    "generator": "Sein.js Toolkit",
+    "version": "2.0",
+    "exporterVersion": "1.0.4"
+  },
+  "buffers": [
+    {
+      "uri": "scene.bin",
+      "byteLength": 24
+    }
+  ],
+  "images": [
+    {
+      "uri": "sprite/atlas/22/22.png"
+    }
+  ],
+  "nodes": [
+    {
+      "matrix": [
+        0.9466493,
+        1.86264515E-09,
+        -0.3222655,
+        0.0,
+        -0.0354754031,
+        0.9939226,
+        -0.104208387,
+        0.0,
+        0.320306957,
+        0.110081293,
+        0.940896153,
+        0.0,
+        0.5927758,
+        0.0289956834,
+        -0.651353359,
+        1.0
+      ],
+      "name": "GameObject",
+      "extensions": {
+        "Sein_sprite": {
+          "index": 0
+        },
+        "Sein_renderer": {
+          "castShadows": true,
+          "receiveShadows": true
+        },
+        "Sein_node": {
+          "selfType": 2,
+          "childrenType": 1,
+          "className": "",
+          "tag": "",
+          "layer": 268435455,
+          "persistent": false,
+          "emitComponentsDestroy": true,
+          "updateOnEverTick": true,
+          "isStatic": false,
+          "skipThisNode": false
+        }
+      }
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensions": {
+    "Sein_renderer": {
+      "gammaCorrection": true,
+      "useHDR": false,
+      "exposure": 0.0
+    },
+    "Sein_ambientLight": {
+      "intensity": 1.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "Sein_sprite": {
+      "sprites": [
+        {
+          "width": 0.9,
+          "height": 1.2,
+          "atlas": {
+            "index": 0,
+            "frameName": "04"
+          },
+          "isBillboard": true,
+          "frustumTest": true
+        }
+      ]
+    },
+    "Sein_atlas": {
+      "atlases": [
+        {
+          "name": "22",
+          "asset": {
+            "generator": "Sein.js Toolkit",
+            "version": "1.0.4"
+          },
+          "frames": {
+            "01": {
+              "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 450,
+                "h": 500
+              },
+              "space": 0
+            },
+            "02": {
+              "frame": {
+                "x": 450,
+                "y": 0,
+                "w": 450,
+                "h": 500
+              },
+              "space": 0
+            },
+            "03": {
+              "frame": {
+                "x": 900,
+                "y": 0,
+                "w": 450,
+                "h": 500
+              },
+              "space": 0
+            },
+            "04": {
+              "frame": {
+                "x": 1350,
+                "y": 0,
+                "w": 450,
+                "h": 500
+              },
+              "space": 0
+            },
+            "05": {
+              "frame": {
+                "x": 1350,
+                "y": 500,
+                "w": 450,
+                "h": 500
+              },
+              "space": 0
+            },
+            "06": {
+              "frame": {
+                "x": 1350,
+                "y": 1000,
+                "w": 450,
+                "h": 500
+              },
+              "space": 0
+            },
+            "07": {
+              "frame": {
+                "x": 900,
+                "y": 500,
+                "w": 450,
+                "h": 500
+              },
+              "space": 0
+            },
+            "08": {
+              "frame": {
+                "x": 900,
+                "y": 1000,
+                "w": 450,
+                "h": 500
+              },
+              "space": 0
+            },
+            "09": {
+              "frame": {
+                "x": 450,
+                "y": 500,
+                "w": 450,
+                "h": 500
+              },
+              "space": 0
+            },
+            "10": {
+              "frame": {
+                "x": 450,
+                "y": 1000,
+                "w": 450,
+                "h": 500
+              },
+              "space": 0
+            },
+            "11": {
+              "frame": {
+                "x": 0,
+                "y": 500,
+                "w": 450,
+                "h": 500
+              },
+              "space": 0
+            }
+          },
+          "meta": {
+            "image": {
+              "index": 0
+            },
+            "size": {
+              "w": 1804,
+              "h": 1804
+            }
+          }
+        }
+      ]
+    }
+  }
+}
