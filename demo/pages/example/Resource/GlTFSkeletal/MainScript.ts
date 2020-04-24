@@ -15,8 +15,8 @@ export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
 
-    game.resource.load({type: 'GlTF', name: 'pig.gltf', url: '/assets/models/pig/fairy_pig.gltf'});
-    game.resource.load({type: 'GlTF', name: 'animation.gltf', url: '/assets/models/animation/animation.gltf'});
+    game.resource.load({type: 'GlTF', name: 'pig.gltf', url: getStaticAssetUrl('/assets/models/pig/fairy_pig.gltf')});
+    game.resource.load({type: 'GlTF', name: 'animation.gltf', url: getStaticAssetUrl('/assets/models/animation/animation.gltf')});
   }
 
   public onLoading(state: Sein.IResourceState) {

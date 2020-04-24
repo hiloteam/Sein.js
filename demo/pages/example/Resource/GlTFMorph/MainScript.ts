@@ -16,7 +16,7 @@ export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
 
-    game.resource.load({type: 'GlTF', name: 'morph.gltf', url: '/assets/models/morph/morph.gltf'});
+    game.resource.load({type: 'GlTF', name: 'morph.gltf', url: getStaticAssetUrl('/assets/models/morph/morph.gltf')});
   }
 
   public onLoading(state: Sein.IResourceState) {

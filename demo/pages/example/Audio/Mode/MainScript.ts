@@ -20,9 +20,9 @@ export default class MainScript extends Sein.LevelScriptActor {
     game.addActor('audioSystem', Sein.Audio.SystemActor);
 
     // Stream 模式
-    game.resource.load({type: 'Audio', mode: 'Stream', name: 'sakura.mp3', url: '/assets/audios/sakura.mp3'});
+    game.resource.load({type: 'Audio', mode: 'Stream', name: 'sakura.mp3', url: getStaticAssetUrl('/assets/audios/sakura.mp3')});
     // Buffer 模式
-    game.resource.load({type: 'Audio', mode: 'Buffer', name: 'clock.mp3', url: '/assets/audios/clock.mp3'});
+    game.resource.load({type: 'Audio', mode: 'Buffer', name: 'clock.mp3', url: getStaticAssetUrl('/assets/audios/clock.mp3')});
   }
 
   public onLoading(state: Sein.IResourceState) {

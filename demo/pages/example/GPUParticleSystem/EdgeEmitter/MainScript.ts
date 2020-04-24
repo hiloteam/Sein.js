@@ -11,7 +11,7 @@ import {createDefaultLights, createDefaultCamera} from '../../utils';
 
 export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
-    this.getGame().resource.load({type: 'Texture', name: 'point', url: '/assets/point.png'});
+    this.getGame().resource.load({type: 'Texture', name: 'point', url: getStaticAssetUrl('/assets/point.png')});
   }
 
   public onError(error) {

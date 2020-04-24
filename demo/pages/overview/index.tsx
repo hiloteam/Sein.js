@@ -61,7 +61,7 @@ export default class Overview extends React.PureComponent<any, IStateTypes> {
       <div className={cx('demo-overview')}>
         <div className={cx('demo-overview-banner')}>
           <video
-            src={'/assets/overview/banner.mp4'}
+            src={getStaticAssetUrl('/assets/overview/banner.mp4')}
             autoPlay
             muted
             loop
@@ -85,7 +85,7 @@ export default class Overview extends React.PureComponent<any, IStateTypes> {
               contentList.map(({title, content, icon}) => (
                 <div className={cx('demo-overview-content')} key={title}>
                   <div>
-                    <img src={`/assets/overview/${icon}.svg`} />
+                    <img src={getStaticAssetUrl(`/assets/overview/${icon}.svg`)} />
                   </div>
                   <h2>{title}</h2>
                   <p>{content}</p>

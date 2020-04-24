@@ -22,8 +22,8 @@ export default class MainScript extends Sein.LevelScriptActor {
     game.addActor('bgmSystem', Sein.Audio.SystemActor);
     game.addActor('soundSystem', Sein.Audio.SystemActor);
 
-    game.resource.load({type: 'Audio', name: 'sakura.mp3', url: '/assets/audios/sakura.mp3'});
-    game.resource.load({type: 'Audio', name: 'clock.mp3', url: '/assets/audios/clock.mp3', mode: 'Buffer'});
+    game.resource.load({type: 'Audio', name: 'sakura.mp3', url: getStaticAssetUrl('/assets/audios/sakura.mp3')});
+    game.resource.load({type: 'Audio', name: 'clock.mp3', url: getStaticAssetUrl('/assets/audios/clock.mp3'), mode: 'Buffer'});
   }
 
   public onLoading(state: Sein.IResourceState) {

@@ -20,9 +20,9 @@ export default class MainScript extends Sein.LevelScriptActor {
     game.addActor('audioSystem', Sein.Audio.SystemActor);
 
     // Stream模式，惰性加载
-    game.resource.load({type: 'Audio', mode: 'Stream', isLazy: true, name: 'sakura.mp3', url: '/assets/audios/sakura.mp3'});
+    game.resource.load({type: 'Audio', mode: 'Stream', isLazy: true, name: 'sakura.mp3', url: getStaticAssetUrl('/assets/audios/sakura.mp3')});
     // Buffer模式，惰性加载
-    game.resource.load({type: 'Audio', mode: 'Buffer', isLazy: true, name: 'clock.mp3', url: '/assets/audios/clock.mp3'});
+    game.resource.load({type: 'Audio', mode: 'Buffer', isLazy: true, name: 'clock.mp3', url: getStaticAssetUrl('/assets/audios/clock.mp3')});
   }
 
   public onLoading(state: Sein.IResourceState) {

@@ -23,7 +23,7 @@ export default class MainScript extends Sein.LevelScriptActor {
     game.addActor('audioSystem', Sein.Audio.SystemActor);
 
     // 加载音频
-    game.resource.load({type: 'Audio', name: 'sakura.mp3', url: '/assets/audios/sakura.mp3'});
+    game.resource.load({type: 'Audio', name: 'sakura.mp3', url: getStaticAssetUrl('/assets/audios/sakura.mp3')});
   }
 
   public onLoading(state: Sein.IResourceState) {

@@ -16,7 +16,7 @@ const SEINJS_GROUP = [
   {
     name: '瞬光',
     title: '前端技术专家',
-    avatar: '/assets/contributors/h.png',
+    avatar: getStaticAssetUrl('/assets/contributors/h.png'),
     link: 'https://github.com/dtysky',
     desc: (
       <p>
@@ -30,7 +30,7 @@ const SEINJS_GROUP = [
   {
     name: '墨川',
     title: '前端技术专家',
-    avatar: '/assets/contributors/mochuan.png',
+    avatar: getStaticAssetUrl('/assets/contributors/mochuan.png'),
     link: 'https://github.com/06wj',
     desc: (
       <p>
@@ -41,7 +41,7 @@ const SEINJS_GROUP = [
   {
     name: '圆空',
     title: '前端技术专家',
-    avatar: '/assets/contributors/yuankong.png',
+    avatar: getStaticAssetUrl('/assets/contributors/yuankong.png'),
     link: 'https://github.com/steel1990',
     desc: (
       <p>
@@ -52,7 +52,7 @@ const SEINJS_GROUP = [
   {
     name: '江成',
     title: '前端技术专家',
-    avatar: '/assets/contributors/jiangcheng.png',
+    avatar: getStaticAssetUrl('/assets/contributors/jiangcheng.png'),
     link: 'https://github.com/picacure',
     desc: (
       <p>
@@ -63,7 +63,7 @@ const SEINJS_GROUP = [
   {
     name: '橘西',
     title: '高级体验设计师',
-    avatar: '/assets/contributors/juxi.png',
+    avatar: getStaticAssetUrl('/assets/contributors/juxi.png'),
     link: 'https://www.behance.net/DraftWang',
     desc: (
       <p>
@@ -75,7 +75,7 @@ const SEINJS_GROUP = [
     name: '奇林',
     title: '前端技术专家',
     link: 'https://github.com/chqilin',
-    avatar: '/assets/contributors/qilin.png',
+    avatar: getStaticAssetUrl('/assets/contributors/qilin.png'),
     desc: (
       <p>
         拥有八年Unity开发经验，擅长在移动平台的性能限制下达到极好的渲染和互动效果，为我们带来了大量的宝贵经验和指导，Sein.js深度用户。
@@ -85,7 +85,7 @@ const SEINJS_GROUP = [
   {
     name: '燃然',
     title: '前端技术专家',
-    avatar: '/assets/contributors/ranran.png',
+    avatar: getStaticAssetUrl('/assets/contributors/ranran.png'),
     desc: (
       <p>
         3D业务的探索推进者和深度实践者，致力于产出精品3D业务，特效方面的一把好手，推出的“堆堆乐”业务破2KW日活，之后将是Sein.js的深度用户。
@@ -95,7 +95,7 @@ const SEINJS_GROUP = [
   {
     name: '星微',
     title: '前实习前端工程师',
-    avatar: '/assets/contributors/xingwei.png',
+    avatar: getStaticAssetUrl('/assets/contributors/xingwei.png'),
     link: 'https://github.com/AlchemyZJK',
     desc: (
       <p>
@@ -106,7 +106,7 @@ const SEINJS_GROUP = [
   {
     name: '冬去',
     title: '前端技术专家',
-    avatar: '/assets/contributors/dongqu.png',
+    avatar: getStaticAssetUrl('/assets/contributors/dongqu.png'),
     desc: (
       <p>
         在Autodesk工作五年，其间积累了丰富的3D图形经验。目前积极寻找Sein.js的业务应用场景，并会加入下一代渲染引擎的建设。
@@ -116,7 +116,7 @@ const SEINJS_GROUP = [
   {
     name: '遥清',
     title: '前端技术专家',
-    avatar: '/assets/contributors/yaoqing.png',
+    avatar: getStaticAssetUrl('/assets/contributors/yaoqing.png'),
     desc: (
       <p>
         蚂蚁庄园项目主力开发之一，一手打造了“小鸡登山赛”等项目，做出了支付宝端内3D游戏的宝贵实践。将会使用Sein.js打造出更多有趣的作品。
@@ -126,7 +126,7 @@ const SEINJS_GROUP = [
   {
     name: '修雷',
     title: '前端技术专家',
-    avatar: '/assets/contributors/xiulei.png',
+    avatar: getStaticAssetUrl('/assets/contributors/xiulei.png'),
     link: 'https://github.com/SevenElement',
     desc: (
       <p>
@@ -137,7 +137,7 @@ const SEINJS_GROUP = [
   {
     name: '战蚂',
     title: '客户端程序',
-    avatar: '/assets/contributors/zhanma.jpg',
+    avatar: getStaticAssetUrl('/assets/contributors/zhanma.jpg'),
     link: 'https://github.com/wewell',
     desc: (
       <p>
@@ -149,7 +149,7 @@ const SEINJS_GROUP = [
   {
     name: '允元',
     title: '客户端程序',
-    avatar: '/assets/contributors/yunyuan.jpg',
+    avatar: getStaticAssetUrl('/assets/contributors/yunyuan.jpg'),
     desc: (
       <p>
         多年unity大型游戏开发经验，长期致力于3D项目的研发。擅长解决性能瓶颈、兼容性瓶颈等各种痛点、槽点。目前主要支持H5游戏开发工作，用于丰富的优化经验。
@@ -159,7 +159,7 @@ const SEINJS_GROUP = [
   {
     name: '昆松',
     title: '高级技术专家',
-    avatar: '/assets/contributors/kunsong.jpg',
+    avatar: getStaticAssetUrl('/assets/contributors/kunsong.jpg'),
     desc: (
       <p>
         负责Unity引擎组和H5技术组，多年自研引擎开发经验。目前从事Unity引擎定制开发与维护，对Sein.js的相关业务的难点提供指导，给出经验方案。
@@ -196,6 +196,7 @@ class TeamMember extends React.Component<
     return (
       <div
         className={cx('demo-contribution-member')}
+        style={{background: `url(${getStaticAssetUrl('/assets/contributors/bj.png')}`}}
         onMouseEnter={() => this.setState({hovered: true})}
         onMouseLeave={() => this.setState({hovered: false})}
       >

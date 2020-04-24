@@ -19,8 +19,8 @@ export default class MainScript extends Sein.LevelScriptActor {
     game.resource.register('Audio', Sein.Audio.Loader);
     game.addActor('audioSystem', Sein.Audio.SystemActor);
 
-    game.resource.load({type: 'Audio', name: 'sakura.mp3', url: '/assets/audios/sakura.mp3'});
-    game.resource.load({type: 'Audio', name: 'subarashii.mp3', url: '/assets/audios/subarashii.mp3'});
+    game.resource.load({type: 'Audio', name: 'sakura.mp3', url: getStaticAssetUrl('/assets/audios/sakura.mp3')});
+    game.resource.load({type: 'Audio', name: 'subarashii.mp3', url: getStaticAssetUrl('/assets/audios/subarashii.mp3')});
   }
 
   public onLoading(state: Sein.IResourceState) {

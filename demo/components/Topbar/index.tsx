@@ -132,7 +132,7 @@ const Topbar = ({onChangeLang, location, match}) => {
             to={`/${lang}/song`}
           >
             <img
-              src={'/assets/logo.svg'}
+              src={getStaticAssetUrl('/assets/logo.svg')}
               alt={'hana-logo'}
             />
           </Link>

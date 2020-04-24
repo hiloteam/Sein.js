@@ -38,7 +38,7 @@ class Tutorial extends React.PureComponent<any, IStateTypes> {
       return;
     }
 
-    const mdUrl = `/assets/tutorials/${mode}/${page}.md`;
+    const mdUrl = getStaticAssetUrl(`/assets/tutorials/${mode}/${page}.md`);
     const {data: content} = await axios.get(mdUrl);
 
     this.setState({content});

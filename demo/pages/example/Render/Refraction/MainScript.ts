@@ -13,7 +13,7 @@ export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
 
-    game.resource.load({type: 'GlTF', name: 'mineral-water.gltf', url: '/assets/models/mineral-water/scene.gltf'});
+    game.resource.load({type: 'GlTF', name: 'mineral-water.gltf', url: getStaticAssetUrl('/assets/models/mineral-water/scene.gltf')});
   }
 
   public onCreate() {

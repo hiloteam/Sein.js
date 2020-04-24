@@ -14,7 +14,7 @@ export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
 
-    game.resource.load({type: 'GlTF', name: 'sprite-atlas.gltf', url: '/assets/models/sprite-atlas/scene.gltf'});
+    game.resource.load({type: 'GlTF', name: 'sprite-atlas.gltf', url: getStaticAssetUrl('/assets/models/sprite-atlas/scene.gltf')});
   }
 
   public onCreate() {

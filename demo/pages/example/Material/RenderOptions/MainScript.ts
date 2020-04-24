@@ -76,7 +76,7 @@ class CustomShaderMaterial extends Sein.RawShaderMaterial {
 
 export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
-    this.getGame().resource.load({type: 'Texture', name: 'sprite.jpg', url: '/assets/paradise.jpg', flipY: true});
+    this.getGame().resource.load({type: 'Texture', name: 'sprite.jpg', url: getStaticAssetUrl('/assets/paradise.jpg'), flipY: true});
   }
 
   public onCreate() {

@@ -237,7 +237,7 @@ class Root extends Sein.GUI.Component<{}, {}> {
 export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
-    game.resource.load({type: 'Atlas', name: 'gui.json', url: '/assets/sprites/gui.json'});
+    game.resource.load({type: 'Atlas', name: 'gui.json', url: getStaticAssetUrl('/assets/sprites/gui.json')});
   }
 
   public onLoading(state: Sein.IResourceState) {

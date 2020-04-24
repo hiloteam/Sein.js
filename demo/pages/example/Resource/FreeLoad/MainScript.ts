@@ -14,7 +14,7 @@ export default class MainScript extends Sein.LevelScriptActor {
 
     createDefaultCamera(game, {target: new Sein.Vector3(.2, 0, 0), position: new Sein.Vector3(.2, 0, 1)});
     createDefaultLights(game);
-    game.resource.load({name: 'bird.gltf', url: '/assets/models/mul-bird/scene.gltf'})
+    game.resource.load({name: 'bird.gltf', url: getStaticAssetUrl('/assets/models/mul-bird/scene.gltf')})
       .then(result => {
         console.log(result);
         game.resource.instantiate<'GlTF'>('bird.gltf').forEach(actor => {actor.animator.play(null, Infinity);});

@@ -13,7 +13,7 @@ import {createDefaultLights, createDefaultCamera} from '../../utils';
 export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
-    game.resource.load({type: 'Atlas', name: 'particles', url: '/assets/sprites/particles.json'});
+    game.resource.load({type: 'Atlas', name: 'particles', url: getStaticAssetUrl('/assets/sprites/particles.json')});
   }
 
   public onError(error) {

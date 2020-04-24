@@ -45,7 +45,7 @@ class Documents extends React.PureComponent<any, IStateTypes> {
       return;
     }
 
-    const html: string = (await axios.get(`/assets/documents/${url}`)).data;
+    const html: string = (await axios.get(getStaticAssetUrl(`/assets/documents/${url}`))).data;
     const res = /<body>([\s\S]+)<\/body>/g.exec(html);
 
     if (!res) {
@@ -65,7 +65,7 @@ class Documents extends React.PureComponent<any, IStateTypes> {
       if (!document.body.querySelector('#typedoc-script-main')) {
         const tag = document.createElement('script');
         tag.id = 'typedoc-script-main';
-        tag.src = '/assets/documents/assets/js/main.js';
+        tag.src = getStaticAssetUrl('/assets/documents/assets/js/main.js');
         tag.defer = true;
         document.body.appendChild(tag);
       }
@@ -73,7 +73,7 @@ class Documents extends React.PureComponent<any, IStateTypes> {
       if (!document.body.querySelector('#typedoc-script-search')) {
         const tag = document.createElement('script');
         tag.id = 'typedoc-script-search';
-        tag.src = '/assets/documents/assets/js/search.js';
+        tag.src = getStaticAssetUrl('/assets/documents/assets/js/search.js');
         tag.defer = true;
         document.body.appendChild(tag);
       }
@@ -83,7 +83,7 @@ class Documents extends React.PureComponent<any, IStateTypes> {
         tag.id = 'typedoc-style';
         tag.rel = 'stylesheet';
         tag.onload = () => resolve();
-        tag.href = '/assets/documents/assets/css/main.css';
+        tag.href = getStaticAssetUrl('/assets/documents/assets/css/main.css');
         document.body.appendChild(tag);
       } else {
         resolve();

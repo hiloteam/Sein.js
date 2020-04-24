@@ -40,7 +40,7 @@ class ExtensionContent extends React.PureComponent<IPropTypes, IStateTypes> {
   private async loadNextPage(props: IPropTypes) {
     const {page, category} = props;
 
-    const mdUrl = `/assets/extensions/${category}/${page}.md`;
+    const mdUrl = getStaticAssetUrl(`/assets/extensions/${category}/${page}.md`);
     const {data: content} = await axios.get(mdUrl);
 
     this.setState({content});

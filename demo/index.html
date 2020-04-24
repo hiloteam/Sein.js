@@ -9,9 +9,22 @@
   <meta name="description" content="渐进式Web3D游戏引擎。">
   <meta name="keywords" content="Sein.js,Sein,seinjs,游戏引擎,GameEngine,Game,3D,Web,H5">
   <link rel="shortcut icon" href="/assets/favor.png">
+  <script>
+    window.__STATIC_ASSETS_PREFIX = '';
+    window.__STATIC_MEDIA_ASSETS_PREFIX = '';
+  </script>
 </head>
 <body>
   <div id="container"></div>
+  <script>
+    window.getStaticAssetUrl = function getStaticAssetUrl(assetPath) {
+      if (/.*\.(png|jpg|mp4|mp3|ogg|svg|bmp)$/.test(assetPath)) {
+        return window.__STATIC_MEDIA_ASSETS_PREFIX + assetPath;
+      }
+
+      return window.__STATIC_ASSETS_PREFIX + assetPath;
+    }
+  </script>
   <script src="/assets/cannon.min.js"></script>
 </body>
 </html>

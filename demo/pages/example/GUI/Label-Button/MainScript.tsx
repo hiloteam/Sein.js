@@ -105,8 +105,8 @@ export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
 
-    game.resource.load({type: 'Texture', url: '/assets/paradise.jpg', name: 'paradise.jpg', flipY: true});
-    game.resource.load({type: 'Atlas', name: '22.json', url: '/assets/sprites/22.json'});
+    game.resource.load({type: 'Texture', url: getStaticAssetUrl('/assets/paradise.jpg'), name: 'paradise.jpg', flipY: true});
+    game.resource.load({type: 'Atlas', name: '22.json', url: getStaticAssetUrl('/assets/sprites/22.json')});
   }
 
   public onLoading(state: Sein.IResourceState) {

@@ -13,7 +13,7 @@ import {createDefaultLights, createDefaultCamera} from '../../utils';
 export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
-    game.resource.load({type: 'Texture', name: 'smoke', url: '/assets/sprites/smoke.png'});
+    game.resource.load({type: 'Texture', name: 'smoke', url: getStaticAssetUrl('/assets/sprites/smoke.png')});
   }
 
   public onError(error) {

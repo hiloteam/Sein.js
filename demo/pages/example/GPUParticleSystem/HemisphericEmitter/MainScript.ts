@@ -8,11 +8,10 @@ import * as Sein from 'seinjs';
 import 'seinjs-gpu-particle-system';
 
 import {createDefaultLights, createDefaultCamera} from '../../utils';
-import { isNewExpression } from '_typescript@3.2.2@typescript';
 
 export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
-    this.getGame().resource.load({type: 'Atlas', name: 'particles', url: '/assets/sprites/particles.json'});
+    this.getGame().resource.load({type: 'Atlas', name: 'particles', url: getStaticAssetUrl('/assets/sprites/particles.json')});
   }
 
   public onError(error) {

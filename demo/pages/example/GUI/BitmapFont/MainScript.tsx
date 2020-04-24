@@ -64,7 +64,7 @@ class Root extends Sein.GUI.Component<{}, {}> {
 export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
-    game.resource.load({type: 'Atlas', name: 'pixel-font.json', url: '/assets/bitmapFont/pixel-font.json'});
+    game.resource.load({type: 'Atlas', name: 'pixel-font.json', url: getStaticAssetUrl('/assets/bitmapFont/pixel-font.json')});
   }
 
   public onLoading(state: Sein.IResourceState) {

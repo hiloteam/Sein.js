@@ -13,7 +13,7 @@ export default class MainScript extends Sein.LevelScriptActor {
 
     game.resource.register('Audio', Sein.Audio.Loader);
     game.addActor('audioSystem', Sein.Audio.SystemActor);
-    game.resource.load({type: 'GlTF', name: 'bird.gltf', url: '/assets/models/bird/bird.gltf'})
+    game.resource.load({type: 'GlTF', name: 'bird.gltf', url: getStaticAssetUrl('/assets/models/bird/bird.gltf')})
       .then(result => {
         console.log(result);
         const actors = game.resource.instantiate<'GlTF'>('bird.gltf');

@@ -11,9 +11,9 @@ import {createDefaultLights, createDefaultCamera} from '../../utils';
 
 export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
-    this.getGame().resource.load({type: 'Atlas', name: 'particles.json', url: '/assets/sprites/particles.json'});
-    this.getGame().resource.load({type: 'Image', name: 'firework-shape.png', url: '/assets/sprites/firework-shape.png'});
-    this.getGame().resource.load({type: 'Image', name: 'firework-mask.png', url: '/assets/sprites/firework-mask.png'});
+    this.getGame().resource.load({type: 'Atlas', name: 'particles.json', url: getStaticAssetUrl('/assets/sprites/particles.json')});
+    this.getGame().resource.load({type: 'Image', name: 'firework-shape.png', url: getStaticAssetUrl('/assets/sprites/firework-shape.png')});
+    this.getGame().resource.load({type: 'Image', name: 'firework-mask.png', url: getStaticAssetUrl('/assets/sprites/firework-mask.png')});
   }
 
   public onError(error) {

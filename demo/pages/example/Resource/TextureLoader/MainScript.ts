@@ -14,7 +14,7 @@ export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
 
-    game.resource.load({type: 'Texture', name: 'yoku.jpg', url: '/assets/yoku.jpg', flipY: true});
+    game.resource.load({type: 'Texture', name: 'yoku.jpg', url: getStaticAssetUrl('/assets/yoku.jpg'), flipY: true});
   }
 
   public onLoading(state: Sein.IResourceState) {

@@ -11,7 +11,7 @@ class PreScript extends Sein.LevelScriptActor {
   private time: number = 0;
 
   public onPreload() {
-    this.getGame().resource.load({type: 'Texture', name: 'logo.jpg', url: '/assets/paradise.jpg'});
+    this.getGame().resource.load({type: 'Texture', name: 'logo.jpg', url: getStaticAssetUrl('/assets/paradise.jpg')});
   }
 
   public onCreate() {

@@ -70,7 +70,7 @@ export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
 
-    game.resource.load({type: 'Texture', name: 'sprite.jpg', url: '/assets/paradise.jpg', flipY: true});
+    game.resource.load({type: 'Texture', name: 'sprite.jpg', url: getStaticAssetUrl('/assets/paradise.jpg'), flipY: true});
   }
 
   public onCreate() {

@@ -14,7 +14,7 @@ export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
 
-    game.resource.load({type: 'Image', name: 'bubble.png', url: '/assets/sprites/bubble.png'});
+    game.resource.load({type: 'Image', name: 'bubble.png', url: getStaticAssetUrl('/assets/sprites/bubble.png')});
   }
 
   public onCreate() {

@@ -126,7 +126,8 @@ class Markdown extends React.PureComponent<IPropTypes, IStateTypes> {
     GUIDE.h2s = [];
     GUIDE.h3s = {};
 
-    const text = marked(props.text);
+    const md = props.text.replace(/(\/assets.*?(png|jpg|mp4))/g, (url) => getStaticAssetUrl(url));
+    const text = marked(md);
     const {hash} = props.location;
     const anchorID = decodeURIComponent(hash.replace('#', ''));
 

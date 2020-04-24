@@ -9,7 +9,6 @@
   background: #fdfdfd;
   height: calc(100vh - #{$content-top});
   overflow: auto;
-  background: url(/assets/production/bg.png);
   background-size: contain;
 
   &-body {

@@ -15,7 +15,7 @@ export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     loadSein(this.getGame());
 
-    this.getGame().resource.load({type: 'CubeTexture', name: 'skybox.tex', url: '/assets/skybox/snow', images: {
+    this.getGame().resource.load({type: 'CubeTexture', name: 'skybox.tex', url: getStaticAssetUrl('/assets/skybox/snow'), images: {
       left: 'left.jpg',
       right: 'right.jpg',
       top: 'top.jpg',

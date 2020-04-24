@@ -10,7 +10,7 @@ import {createDefaultLights, createDefaultCamera} from '../../utils';
 
 export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
-    this.getGame().resource.load({type: 'GlTF', name: 'material-script.gltf', url: '/assets/models/material-script/scene.gltf'});
+    this.getGame().resource.load({type: 'GlTF', name: 'material-script.gltf', url: getStaticAssetUrl('/assets/models/material-script/scene.gltf')});
   }
 
   public onCreate() {

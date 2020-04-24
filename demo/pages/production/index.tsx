@@ -114,9 +114,9 @@ class Item extends React.Component<
         >
           {
             props.video && state.hovered ? (
-              <video src={props.video} autoPlay={true} poster={`/assets/production/${props.cover}.jpg`} />
+              <video src={props.video} autoPlay={true} poster={getStaticAssetUrl(`/assets/production/${props.cover}.jpg`)} />
             ) : (
-              <div style={{backgroundImage: `url(/assets/production/${props.cover}.jpg)`}} />
+              <div style={{backgroundImage: `url(${getStaticAssetUrl('/assets/production/' + props.cover +'.jpg')})`}} />
             )
           }
         </div>
@@ -128,11 +128,11 @@ class Item extends React.Component<
             content={
               <Image
                 className={cx('demo-production-member-qrcode')}
-                src={`/assets/production/${props.cover}-qrcode.png`}
+                src={getStaticAssetUrl(`/assets/production/${props.cover}-qrcode.png`)}
               />
             }
           >
-            <img src={'/assets/production/scan-code.png'} style={{cursor: 'pointer'}} />
+            <img src={getStaticAssetUrl('/assets/production/scan-code.png')} style={{cursor: 'pointer'}} />
           </Tooltip>
         </h3>
         {props.desc}
@@ -170,7 +170,10 @@ export default class Production extends React.Component<{}, {scroll: number}> {
 
   public render() {
     return (
-      <div className={cx('demo-production')}>
+      <div
+        className={cx('demo-production')}
+        style={{background: `url(${getStaticAssetUrl('/assets/production/bg.png')}`}}
+      >
         <div
           className={cx('demo-production-body', 'markdown-body')}
           onWheel={this.handleScroll}

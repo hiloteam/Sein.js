@@ -10,7 +10,7 @@ import {createDefaultCamera} from '../../utils';
 
 export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
-    this.getGame().resource.load({type: 'GlTF', name: 'soda.gltf', url: '/assets/models/soda/scene.gltf'});
+    this.getGame().resource.load({type: 'GlTF', name: 'soda.gltf', url: getStaticAssetUrl('/assets/models/soda/scene.gltf')});
   }
 
   public onCreate() {

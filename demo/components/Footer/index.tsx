@@ -30,7 +30,7 @@ const Footer = () => (
 					content={(
 						<div>
 							<p style={{fontSize: 14, lineHeight: '22px'}}>若无法加入请联系微信：dtysky</p>
-							<img src={'/assets/wx-qrcode.png'} className={cx('demo-footer-item-qrcode')} />
+							<img src={getStaticAssetUrl('/assets/wx-qrcode.png')} className={cx('demo-footer-item-qrcode')} />
 						</div>
 					)}
 				>
@@ -40,7 +40,7 @@ const Footer = () => (
 				<Tooltip
 					color={'#0D1A26'}
 					position={'top'}
-					content={<img src={'/assets/ding-qrcode.png'} className={cx('demo-footer-item-qrcode')} />}
+					content={<img src={getStaticAssetUrl('/assets/ding-qrcode.png')} className={cx('demo-footer-item-qrcode')} />}
 				>
 					<p>阿里内部钉钉群</p>
 				</Tooltip>
@@ -48,7 +48,7 @@ const Footer = () => (
 		</div>
 
 		<div className={cx('demo-footer-item')}>
-			<h3><img src={'/assets/footer-logo.svg'} /></h3>
+			<h3><img src={getStaticAssetUrl('/assets/footer-logo.svg')} /></h3>
 			<div>
 				<Link to={'/cn/team'}>核心团队</Link>
 				<a href={'https://github.com/hiloteam'} target={'_blank'}>hiloteam</a>

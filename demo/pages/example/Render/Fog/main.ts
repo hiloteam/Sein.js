@@ -14,7 +14,7 @@ function generateRandomVec3(z: number) {
 
 class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
-    this.getGame().resource.load({type: 'Atlas', name: '22.json', url: '/assets/sprites/22.json'});
+    this.getGame().resource.load({type: 'Atlas', name: '22.json', url: getStaticAssetUrl('/assets/sprites/22.json')});
   }
 
   public onCreate() {

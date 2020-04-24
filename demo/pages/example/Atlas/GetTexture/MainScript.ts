@@ -11,7 +11,7 @@ export default class MainScript extends Sein.LevelScriptActor {
   public onPreload() {
     const game = this.getGame();
 
-    game.resource.load({type: 'Texture', name: 'black-hole.png', url: '/assets/sprites/black-hole.png'});
+    game.resource.load({type: 'Texture', name: 'black-hole.png', url: getStaticAssetUrl('/assets/sprites/black-hole.png')});
   }
 
   public onLoading(state: Sein.IResourceState) {

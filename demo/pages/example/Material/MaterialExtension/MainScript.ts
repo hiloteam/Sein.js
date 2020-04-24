@@ -70,7 +70,7 @@ export default class MainScript extends Sein.LevelScriptActor {
   private haloSpeed: number = 0.02;
 
   public onPreload() {
-    this.getGame().resource.load({type: 'GlTF', name: 'building-fx.gltf', url: '/assets/models/building-fx/building_fx.gltf'});
+    this.getGame().resource.load({type: 'GlTF', name: 'building-fx.gltf', url: getStaticAssetUrl('/assets/models/building-fx/building_fx.gltf')});
   }
 
   public onCreate() {

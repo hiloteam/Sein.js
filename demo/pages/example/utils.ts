@@ -59,7 +59,7 @@ export function createDefaultLights(game: Sein.Game) {
 }
 
 export function loadSein(game: Sein.Game) {
-  game.resource.load({type: 'GlTF', name: 'sein.gltf', url: '/assets/models/sein/sein.gltf'});
+  game.resource.load({type: 'GlTF', name: 'sein.gltf', url: getStaticAssetUrl('/assets/models/sein/sein.gltf')});
 
   const dom = document.createElement('div');
   dom.style.width = '100%';
