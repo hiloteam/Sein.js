@@ -37,7 +37,7 @@ const config = Object.assign({}, commonConfig, {
 });
 config.plugins.push(
   new CleanWebpackPlugin(
-    ['*'],
+    ['*', '!\.git'],
     {root: outPath}
   ),
   new CopyWebpackPlugin(

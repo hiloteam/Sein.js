@@ -6,6 +6,7 @@
  */
 const typedoc = require('typedoc');
 const path = require('path');
+const fs = require('fs');
 
 const sources = [
   path.resolve(__dirname, './src')

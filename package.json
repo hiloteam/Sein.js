@@ -12,7 +12,7 @@
     "prepublishOnly": "bash ./prepublish.sh",
     "gen-doc": "node ./gen-doc.js",
     "dev": "concurrently \"npm run hilo3d-watch\" \"npm run gen-doc && node ./demo/server.dev.js --max-old-space-size=4096\"",
-    "demo-build": "npm run hilo3d-build && npm run gen-doc && webpack -p --config ./demo/webpack.demo.config.js"
+    "demo-build": "npm run hilo3d-build && npm run gen-doc && webpack -p --config ./demo/webpack.demo.config.js && cp ./dist/index.html ./dist/404.html"
   },
   "keywords": [
     "Game engine",
