@@ -4,7 +4,7 @@
 
 ### Workflow
 
-![](./workflow.gif)
+![](workflow.gif)
 
 ### Development
 
@@ -20,7 +20,7 @@
  * [hiloteam](https://github.com/hiloteam)
 
 ### Contact us
-  * QQ Group: 180165546
+  * Weixin Group: ![wx](demo/assets/wx-qrcode.png)
 
 ### License
 
