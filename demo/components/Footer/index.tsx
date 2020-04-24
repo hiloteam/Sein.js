@@ -24,13 +24,25 @@ const Footer = () => (
 		<div className={cx('demo-footer-item')}>
 			<h3>帮助反馈</h3>
 			<div>
-				<p>QQ群: 180165546</p>
 				<Tooltip
 					color={'#0D1A26'}
 					position={'top'}
-					content={<img src={'/assets/footer-qrcode.png'}  className={cx('demo-footer-item-qrcode')} />}
+					content={(
+						<div>
+							<p style={{fontSize: 14, lineHeight: '22px'}}>若无法加入请联系微信：dtysky</p>
+							<img src={'/assets/wx-qrcode.png'} className={cx('demo-footer-item-qrcode')} />
+						</div>
+					)}
 				>
-					<p>钉钉群</p>
+					<p>微信群二维码</p>
+				</Tooltip>
+				<br />
+				<Tooltip
+					color={'#0D1A26'}
+					position={'top'}
+					content={<img src={'/assets/ding-qrcode.png'} className={cx('demo-footer-item-qrcode')} />}
+				>
+					<p>阿里内部钉钉群</p>
 				</Tooltip>
 			</div>
 		</div>
