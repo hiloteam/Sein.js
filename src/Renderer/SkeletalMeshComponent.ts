@@ -60,11 +60,24 @@ export default class SkeletalMeshComponent<
   }
 
   /**
+   * 将一个`SkeletalMeshComponent`的骨架赋予到本组件上，通常用于换装。
+   */
+  public changeSkeleton(component: SkeletalMeshComponent) {
+    if (this.__multiPrimitive) {
+      this._list.forEach(m => {
+        m.skeleton = component._mesh.skeleton;
+      });
+    } else {
+      this._mesh.skeleton = component._mesh.skeleton;
+    }
+  }
+
+  /**
    * **不要自己调用！！**
    * 
    * @hidden
    */
-  public cloneSkinningFromHilo(mesh: Hilo3d.SkinedMesh, jointNameMap: {[key: number]: Hilo3d.Node}, index?: number) {
+  public cloneSkinningFromHilo(mesh: Hilo3d.SkinedMesh, index?: number) {
     let m = this._mesh;
 
     if (this.__multiPrimitive) {
@@ -75,28 +88,6 @@ export default class SkeletalMeshComponent<
       }
     }
 
-    if (mesh.jointMatTexture) {
-      m.jointMatTexture = mesh.jointMatTexture;
-    }
-
-    if ((mesh as any).jointMat) {
-      (m as any).jointMat = (mesh as any).jointMat.slice();
-    }
-
-    m.inverseBindMatrices = [];
-    m.jointNames = mesh.jointNames.slice();
-    (m as any).jointName = (mesh as any).jointName;
-    m.jointNodeList = mesh.jointNodeList.map(({jointName}, i) => {
-      m.inverseBindMatrices.push(mesh.inverseBindMatrices[i].clone());
-      if (!jointNameMap[jointName]) {
-        throwException(
-          new Error('An error is occurred when adding joints for SkeletalMeshComponent'),
-          this,
-          {jointNameMap, jointName}
-        );
-      }
-
-      return jointNameMap[jointName];
-    });
+    m.skeleton = mesh.skeleton.clone(this.getRoot<PrimitiveComponent>().hiloNode);
   }
 }

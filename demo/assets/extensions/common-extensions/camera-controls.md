@@ -10,5 +10,5 @@ npm i seinjs-camera-controls --save
 
 之后便可以引入使用它们，详细的使用方法和实例可见[Actor观察控制器](../../example/camera/actor-observe-control)、[绕轨相机控制器](../../example/camera/camera-orbit-control)和[自由相机控制器](../../example/camera/free-orbit-control)。
 
-更详细的API文档可见[CameraControls](https://github.com/hiloteam/seinjs-camera-controllers/blob/master/doc/README.md)。  
+更详细的API文档可见[CameraControls](https://github.com/hiloteam/seinjs-camera-controls/blob/master/doc/README.md)。  
 

@@ -211,10 +211,6 @@ function generateActorOrComponentFromNode(
     (parentActor as any).animCount += 1;
   }
 
-  if (isComponent && (parentActor as any).jointNameMap && root.hiloNode.jointName !== undefined) {
-    (parentActor as any).jointNameMap[root.hiloNode.jointName] = root.hiloNode;
-  }
-
   return result;
 }
 
@@ -308,16 +304,12 @@ function convert(
         const actor = result;
   
         (actor as any).animNameMap = {};
-        (actor as any).jointNameMap = {};
         (actor as any).animCount = 0;
         (actor as any).skeletalMeshComponents = (actor as any).skeletalMeshComponents || [];
         const animationId = actor.root.hiloNode.animationId;
         if (resource.anim && resource.anim.validAnimationIds[animationId]) {
           (actor as any).animNameMap[animationId] = actor.root.hiloNode;
           (actor as any).animCount += 1;
-        }
-        if (actor.root.hiloNode.jointName !== undefined) {
-          (actor as any).jointNameMap[actor.root.hiloNode.jointName] = actor.root.hiloNode;
         }
 
         actors.add(actor);
@@ -403,7 +395,7 @@ export default function addActorsFromGlTF(
   );
 
   actors.forEach(a => {
-    const {animCount, animNameMap, jointNameMap, skeletalMeshComponents} = a as any;
+    const {animCount, animNameMap, skeletalMeshComponents} = a as any;
 
     let length = skeletalMeshComponents.length;
     for (let i = 0; i < length; i += 1 ) {
@@ -411,13 +403,12 @@ export default function addActorsFromGlTF(
       const len = meshes.length;
 
       for (let index = 0; index < len; index += 1) {
-        component.cloneSkinningFromHilo(meshes[index], jointNameMap, index);
+        component.cloneSkinningFromHilo(meshes[index], index);
       }
     }
 
     delete (a as any).animCount;
     delete (a as any).animNameMap;
-    delete (a as any).jointNameMap;
     delete (a as any).skeletalMeshComponents;
 
     if (animCount > 0) {

@@ -28,6 +28,8 @@
 
 在最后这个界面的**Other Settings**中，将**Color Space**改成**Linear**即可。
 
+>目前而言，如果是windows平台下使用`Sein/PBR`材质出现问题，请将`Auto Graphics API for Windows`关闭，然后手动设定为`OpenGLCore`（需要设置为第一位）！
+
 最后是灯光设置，打开:
 
 ![lightings](/assets/tutorials/artist/img/7.png)

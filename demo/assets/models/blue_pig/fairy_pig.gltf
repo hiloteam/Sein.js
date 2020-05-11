@@ -1,0 +1,783 @@
+{
+  "extensionsUsed": [
+    "Sein_renderer",
+    "Sein_ambientLight",
+    "Sein_textureImprove",
+    "Sein_physicBody",
+    "Sein_node"
+  ],
+  "extensionsRequired": [
+    "Sein_renderer",
+    "Sein_ambientLight",
+    "Sein_textureImprove",
+    "Sein_physicBody",
+    "Sein_node"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 673,
+      "type": "VEC3",
+      "max": [
+        0.010107495822012424,
+        0.0073373191989958286,
+        -5.22118789376691E-05
+      ],
+      "min": [
+        -0.01012092363089323,
+        -0.0075637833215296268,
+        -0.020912911742925644
+      ],
+      "name": "Circle.001_0_0-primitives-POSITION"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 673,
+      "type": "VEC3",
+      "max": [
+        0.99968677759170532,
+        0.99973803758621216,
+        1.0
+      ],
+      "min": [
+        -0.99951046705245972,
+        -0.99830669164657593,
+        -0.99977445602416992
+      ],
+      "name": "Circle.001_0_0-primitives-NORMAL"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 24,
+      "componentType": 5126,
+      "count": 673,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "name": "Circle.001_0_0-primitives-COLOR_0"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 40,
+      "componentType": 5126,
+      "count": 673,
+      "type": "VEC2",
+      "max": [
+        0.97675001621246338,
+        0.98811322450637817
+      ],
+      "min": [
+        0.028933480381965637,
+        0.022595047950744629
+      ],
+      "name": "Circle.001_0_0-primitives-TEXCOORD_0"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 48,
+      "componentType": 5126,
+      "count": 673,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        0.69854211807250977,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.99997895956039429,
+        -0.65181821584701538,
+        -1.0
+      ],
+      "name": "Circle.001_0_0-primitives-TANGENT"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 64,
+      "componentType": 5123,
+      "count": 673,
+      "type": "VEC4",
+      "max": [
+        14.0,
+        13.0,
+        14.0,
+        14.0
+      ],
+      "min": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "Circle.001_0_0-primitives-JOINTS_0"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 72,
+      "componentType": 5126,
+      "count": 673,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.49999985098838806,
+        0.30138984322547913,
+        0.11920164525508881
+      ],
+      "min": [
+        0.353002667427063,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "Circle.001_0_0-primitives-WEIGHTS_0"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 3246,
+      "type": "SCALAR",
+      "max": [
+        672.0
+      ],
+      "min": [
+        0.0
+      ],
+      "name": "Circle.001_0_0-indices-0"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 15,
+      "type": "MAT4",
+      "max": [
+        1.0000001192092896,
+        0.91330176591873169,
+        1.0,
+        0.0,
+        0.30429950356483459,
+        1.0000001192092896,
+        1.0000001192092896,
+        0.0,
+        0.99999988079071045,
+        0.99999940395355225,
+        3.5762766970037774E-07,
+        0.0,
+        0.018150236457586288,
+        0.0078879892826080322,
+        0.0039154565893113613,
+        1.0
+      ],
+      "min": [
+        -0.72799164056777954,
+        -0.91330039501190186,
+        -1.0,
+        0.0,
+        -0.39490285515785217,
+        -0.95257633924484253,
+        -1.0000001192092896,
+        0.0,
+        -0.9525754451751709,
+        -0.99999994039535522,
+        -7.1525568046126864E-07,
+        0.0,
+        -0.0095912739634513855,
+        -0.013521332293748856,
+        -0.0039154565893113613,
+        1.0
+      ],
+      "name": "invBind-fairy_join_root-Circle.001"
+    }
+  ],
+  "asset": {
+    "generator": "SEIN.JS Toolkit",
+    "version": "2.0",
+    "exporterVersion": "1.2.3"
+  },
+  "buffers": [
+    {
+      "uri": "fairy_pig.bin",
+      "byteLength": 66700
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 24,
+      "byteLength": 59224,
+      "byteStride": 88,
+      "name": "Circle.001_0_0-primitives"
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 59248,
+      "byteLength": 6492,
+      "name": "Circle.001_0_0-indices"
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 65740,
+      "byteLength": 960,
+      "name": "invBind-fairy_join_root-Circle.001"
+    }
+  ],
+  "images": [
+    {
+      "uri": "pig/textures/fav_pig_1.jpg",
+      "extras": {
+        "type": "LDR"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.11699999868869781,
+        "roughnessFactor": 0.81999999284744263
+      },
+      "emissiveFactor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "blue_pig"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "COLOR_0": 2,
+            "TEXCOORD_0": 3,
+            "TANGENT": 4,
+            "JOINTS_0": 5,
+            "WEIGHTS_0": 6
+          },
+          "indices": 7,
+          "material": 0
+        }
+      ],
+      "name": "Circle.001_0_0"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1,
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -3.68,
+        0.0,
+        -2.02,
+        1.0
+      ],
+      "name": "blue_pig",
+      "extensions": {
+        "Sein_physicBody": {
+          "mass": 0.0,
+          "friction": 0.0,
+          "restitution": 0.0,
+          "unControl": false,
+          "physicStatic": false,
+          "sleeping": false,
+          "colliders": [
+            {
+              "name": "box0",
+              "type": "BOX",
+              "offset": [
+                0.0158849955,
+                1.05634022,
+                -0.0158849955
+              ],
+              "size": [
+                2.016627,
+                2.127822,
+                1.57185292
+              ],
+              "isTrigger": true
+            }
+          ]
+        },
+        "Sein_node": {
+          "selfType": 2,
+          "childrenType": 1,
+          "className": "",
+          "tag": "",
+          "layer": 268435455,
+          "persistent": false,
+          "emitComponentsDestroy": true,
+          "updateOnEverTick": true,
+          "isStatic": false,
+          "skipThisNode": false
+        }
+      }
+    },
+    {
+      "skin": 0,
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mesh": 0,
+      "name": "Circle.001",
+      "extensions": {
+        "Sein_renderer": {
+          "castShadows": true,
+          "receiveShadows": true
+        }
+      }
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.1920928E-05,
+        99.9999847,
+        0.0,
+        0.0,
+        -99.9999847,
+        -1.1920928E-05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "fav_pig_low"
+    },
+    {
+      "children": [
+        4,
+        12,
+        15
+      ],
+      "rotation": [
+        -0.0202416871,
+        -0.706817031,
+        0.0202416871,
+        0.706817
+      ],
+      "scale": [
+        1.0,
+        0.99999994,
+        1.0
+      ],
+      "translation": [
+        -6.85677247E-16,
+        0.0010856617,
+        -0.00278265658
+      ],
+      "name": "fairy_join_root"
+    },
+    {
+      "children": [
+        5,
+        8,
+        10
+      ],
+      "rotation": [
+        -1.24777166E-09,
+        9.17447854E-11,
+        -0.008154918,
+        0.999966741
+      ],
+      "scale": [
+        1.0,
+        0.99999994,
+        1.0
+      ],
+      "translation": [
+        -0.00511958636,
+        -2.98023217E-10,
+        2.23784255E-10
+      ],
+      "name": "joint2"
+    },
+    {
+      "children": [
+        6,
+        7
+      ],
+      "rotation": [
+        -0.608555436,
+        0.353540152,
+        0.356857747,
+        0.614265561
+      ],
+      "scale": [
+        1.0,
+        0.99999994,
+        1.0
+      ],
+      "translation": [
+        -0.00766679458,
+        -1.30385158E-09,
+        3.338984E-10
+      ],
+      "name": "joint3"
+    },
+    {
+      "rotation": [
+        -0.1434356,
+        -0.1515425,
+        -0.303517,
+        0.9296981
+      ],
+      "scale": [
+        0.99999994,
+        0.99999994,
+        0.9999999
+      ],
+      "translation": [
+        -0.004885602,
+        -6.20959328E-09,
+        -2.91503954E-09
+      ],
+      "name": "joint8"
+    },
+    {
+      "rotation": [
+        -0.734507859,
+        0.6644829,
+        -0.129342526,
+        -0.0472356
+      ],
+      "scale": [
+        0.9999998,
+        0.99999994,
+        0.9999999
+      ],
+      "translation": [
+        0.00248764176,
+        0.00420412375,
+        -7.92824649E-05
+      ],
+      "name": "joint28"
+    },
+    {
+      "children": [
+        9
+      ],
+      "rotation": [
+        0.280364275,
+        -0.649150252,
+        -0.649150133,
+        -0.2803642
+      ],
+      "scale": [
+        0.9999999,
+        0.999999642,
+        0.99999994
+      ],
+      "translation": [
+        -0.00135553547,
+        9.8434386E-05,
+        0.007620369
+      ],
+      "name": "joint7"
+    },
+    {
+      "rotation": [
+        4.49155273E-08,
+        -7.645916E-08,
+        -0.368785858,
+        0.9295144
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "translation": [
+        -0.00270731444,
+        -2.97557556E-09,
+        -5.766082E-10
+      ],
+      "name": "joint23"
+    },
+    {
+      "children": [
+        11
+      ],
+      "rotation": [
+        0.280363053,
+        -0.64915055,
+        0.6491508,
+        0.280363172
+      ],
+      "scale": [
+        0.99999994,
+        1.0,
+        1.0
+      ],
+      "translation": [
+        -0.00140350952,
+        6.427702E-05,
+        -0.00761977
+      ],
+      "name": "joint25"
+    },
+    {
+      "rotation": [
+        -1.56277366E-07,
+        -2.566775E-09,
+        0.9295138,
+        0.3687873
+      ],
+      "scale": [
+        1.00000024,
+        1.0,
+        0.99999994
+      ],
+      "translation": [
+        -0.00270731165,
+        1.62748615E-09,
+        -5.25148758E-10
+      ],
+      "name": "joint26"
+    },
+    {
+      "children": [
+        13
+      ],
+      "rotation": [
+        3.099093E-08,
+        -5.742922E-09,
+        0.983260155,
+        0.182207242
+      ],
+      "scale": [
+        1.00000131,
+        1.0,
+        1.0
+      ],
+      "translation": [
+        0.001284773,
+        -0.000967662549,
+        0.003915456
+      ],
+      "name": "joint12"
+    },
+    {
+      "children": [
+        14
+      ],
+      "rotation": [
+        -0.9367459,
+        -0.350010276,
+        8.978459E-09,
+        1.38794846E-07
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.0
+      ],
+      "translation": [
+        -0.0007929484,
+        6.091611E-10,
+        -6.06311057E-10
+      ],
+      "name": "joint13"
+    },
+    {
+      "rotation": [
+        -0.388940036,
+        -0.5905299,
+        -0.388939977,
+        0.590530038
+      ],
+      "scale": [
+        0.99999994,
+        0.9999997,
+        1.0
+      ],
+      "translation": [
+        -0.0006953784,
+        9.355196E-10,
+        2.94279351E-10
+      ],
+      "name": "joint14"
+    },
+    {
+      "children": [
+        16
+      ],
+      "rotation": [
+        4.10705852E-08,
+        -7.610783E-09,
+        0.9832601,
+        0.182207778
+      ],
+      "scale": [
+        1.000001,
+        1.0,
+        1.0
+      ],
+      "translation": [
+        0.00128477765,
+        -0.000967662141,
+        -0.003915476
+      ],
+      "name": "joint15"
+    },
+    {
+      "children": [
+        17
+      ],
+      "rotation": [
+        -0.9367456,
+        -0.350010961,
+        2.58312838E-08,
+        1.324979E-07
+      ],
+      "scale": [
+        0.999999762,
+        0.9999998,
+        1.0
+      ],
+      "translation": [
+        -0.0007929491,
+        4.27651E-11,
+        -3.21448562E-10
+      ],
+      "name": "joint16"
+    },
+    {
+      "rotation": [
+        -0.388940036,
+        -0.5905299,
+        -0.388939917,
+        0.5905301
+      ],
+      "scale": [
+        1.00000012,
+        1.00000012,
+        1.0
+      ],
+      "translation": [
+        -0.0006953798,
+        -1.24751276E-09,
+        -2.86043736E-12
+      ],
+      "name": "joint17"
+    }
+  ],
+  "samplers": [
+    {
+      "minFilter": 9985
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "inverseBindMatrices": 8,
+      "skeleton": 1,
+      "joints": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "name": "skeleton-fairy_join_root-Circle.001"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "extensions": {
+        "Sein_textureImprove": {
+          "isImageCanRelease": false,
+          "anisotropic": 1,
+          "textureType": 5121
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "Sein_renderer": {
+      "gammaCorrection": true,
+      "useHDR": false,
+      "exposure": 0.0
+    },
+    "Sein_ambientLight": {
+      "intensity": 1.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  }
+}
