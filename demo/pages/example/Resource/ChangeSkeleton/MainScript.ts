@@ -16,7 +16,7 @@ export default class MainScript extends Sein.LevelScriptActor {
     const game = this.getGame();
 
     game.resource.load({type: 'GlTF', name: 'pig.gltf', url: getStaticAssetUrl('/assets/models/pig/fairy_pig.gltf')});
-    game.resource.load({type: 'GlTF', name: 'animation.gltf', url: getStaticAssetUrl('/assets/models/animation/animation.gltf')});
+    game.resource.load({type: 'GlTF', name: 'blue_pig.gltf', url: getStaticAssetUrl('/assets/models/blue_pig/fairy_pig.gltf')});
   }
 
   public onLoading(state: Sein.IResourceState) {
@@ -29,18 +29,17 @@ export default class MainScript extends Sein.LevelScriptActor {
     createDefaultCamera(game, {position: new Sein.Vector3(0, 1, -6), target: new Sein.Vector3(0, 1, 0)});
     createDefaultLights(game);
 
-    game.resource.instantiate<'GlTF'>('animation.gltf').forEach(actor => {
-      if (actor.animator) {
-        actor.animator.play(null, Infinity);
-      }
-    });
-
     this.pig = game.resource.instantiate<'GlTF'>('pig.gltf').get(0);
     this.pig.transform.x += 3;
     this.animations = this.pig.animator.animationNames;
 
     console.log(this.pig);
 
+    const bluePig = game.resource.instantiate<'GlTF'>('blue_pig.gltf').get(0) as any;
+
+    bluePig.findComponentByClass(Sein.SkeletalMeshComponent).changeSkeleton(this.pig.findComponentByClass(Sein.SkeletalMeshComponent));
+
+    this.pig.visible = false;
     this.pig.animator.event.add('End', this.playNext);
     this.playNext();
   }

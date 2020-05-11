@@ -48,7 +48,7 @@ GPU粒子系统主要通过生成由大量的`point`图元构成的`Goemetry`工
 
 我们提供了丰富的实例来展示粒子系统的效果——[边界发射器](../../example/gpu-particle-system/edge-emitter)、[风场发射器](../../example/gpu-particle-system/wind-emitter)、[球体发射器](../../example/gpu-particle-system/sphere-emitter)、[半球发射器](../../example/gpu-particle-system/hemispheric-emitter)、[自定义轨迹](../../example/gpu-particle-system/custom-trajectory)和[图集](../../example/gpu-particle-system/custom-trajectory)。
 
-更详细的API文档可见[GPUParticlesSystem](https://github.com/hiloteam/seinjs-gpu-particles-system/blob/master/doc/README.md)。  
+更详细的API文档可见[GPUParticlesSystem](https://github.com/hiloteam/seinjs-gpu-particle-system/blob/master/doc/README.md)。  
 
 ## 优化注意
 
