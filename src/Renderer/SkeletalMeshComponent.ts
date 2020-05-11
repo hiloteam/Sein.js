@@ -10,9 +10,10 @@ import PrimitiveComponent, {IPrimitiveComponentState} from '../Renderer/Primitiv
 import SceneActor, {isSceneActor} from '../Renderer/ISceneActor';
 import SObject from '../Core/SObject';
 import throwException from '../Exception/throwException';
-import Mesh from '../Mesh/Mesh';
+import Mesh, { isMesh } from '../Mesh/Mesh';
 import SkeletalMesh from '../Mesh/SkeletalMesh';
 import RawShaderMaterial from '../Material/RawShaderMaterial';
+import BreakGuardException from '../Exception/BreakGuardException';
 
 /**
  * SkeletalMeshComponent的初始化参数。
@@ -70,6 +71,42 @@ export default class SkeletalMeshComponent<
     } else {
       this._mesh.skeleton = component._mesh.skeleton;
     }
+  }
+
+  /**
+   * 修改本组件的蒙皮信息，通常用于换装。
+   */
+  public changeSkin(mesh: Mesh): void;
+  public changeSkin(meshes: Mesh[]): void;
+  public changeSkin(param: Mesh | Mesh[]) {
+    if (isMesh(param)) {
+      this._list = null;
+      this._table = null;
+      this.__multiPrimitive = false;
+      this._mesh.geometry = param.geometry;
+      this._mesh.material = param.material;
+      this._node.children = [this._mesh];
+
+      return;
+    }
+
+    if (param.length < 2) {
+      throwException(new BreakGuardException(this, `meshes which is array must have more than two elements, if one, please use changeSkin(mesh)`), this);
+      return;
+    }
+
+    const {skeleton} = this._mesh;
+    this._node.children = [];
+    this._table = {};
+    this._list = param.map(({geometry, material}) => {
+      const mesh = new SkeletalMesh({geometry, material: (material as RawShaderMaterial).cloneForInst ? material.clone() : material, skeleton});
+      this._table[material.name] = mesh;
+      this._node.addChild(mesh);
+
+      return mesh;
+    });
+
+    this._mesh = this._list[0];
   }
 
   /**

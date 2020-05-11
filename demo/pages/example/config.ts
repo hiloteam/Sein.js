@@ -81,7 +81,7 @@ import * as ResourceGLBLoad from './Resource/GLBLoad';
 import * as ResourceCancel from './Resource/Cancel';
 import * as GlTFMorph from './Resource/GlTFMorph';
 import * as GlTFSkeletal from './Resource/GlTFSkeletal';
-import * as ChangeSkeleton from './Resource/ChangeSkeleton';
+import * as ChangeCostume from './Resource/ChangeCostume';
 import * as GlTFScriptBinding from './Resource/GlTFScriptBinding';
 
 /* -------------- Render --------------- */
@@ -300,7 +300,7 @@ export const components: IComponents = {
     {path: 'cancel', ...ResourceCancel},
     {path: 'gltf-morph', ...GlTFMorph},
     {path: 'gltf-skeletal', ...GlTFSkeletal},
-    {path: 'change-skeleton', ...ChangeSkeleton},
+    {path: 'change-costume', ...ChangeCostume},
     {path: 'gltf-script-binding', ...GlTFScriptBinding}
   ],
   animation: [

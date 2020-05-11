@@ -12,7 +12,7 @@ import MainScript from './MainScript';
 const code = require('!raw-loader!./MainScript.ts');
 const desc = require('./readme.md');
 
-const label = {en: 'ChangeSkeleton', cn: '修改骨架'};
+const label = {en: 'ChangeCostume', cn: '换装'};
 export {label, desc};
 
 export const Component = () => (

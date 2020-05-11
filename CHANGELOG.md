@@ -1,5 +1,9 @@
 # Change Logs
 
+## 1.5.1
+
+1. 为`SkeletalMeshComponent`添加了`changeSkin`方法，可以直接保留骨架修改蒙皮，一般用于换装。
+
 ## 1.5.0
 
 1. 为`SkeletalMeshComponent`添加了`changeSkeleton`方法，可以复用骨架，一般用于换装。

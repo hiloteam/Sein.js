@@ -9,8 +9,6 @@ import * as Sein from 'seinjs';
 import {createDefaultCamera, createDefaultLights} from '../../utils';
 
 export default class MainScript extends Sein.LevelScriptActor {
-  private pig: Sein.SkeletalMeshActor;
-  private animations: string[] = [];
 
   public onPreload() {
     const game = this.getGame();
@@ -29,30 +27,17 @@ export default class MainScript extends Sein.LevelScriptActor {
     createDefaultCamera(game, {position: new Sein.Vector3(0, 1, -6), target: new Sein.Vector3(0, 1, 0)});
     createDefaultLights(game);
 
-    this.pig = game.resource.instantiate<'GlTF'>('pig.gltf').get(0);
-    this.pig.transform.x += 3;
-    this.animations = this.pig.animator.animationNames;
+    const pig = game.resource.instantiate<'GlTF'>('pig.gltf').get(0);
+    pig.transform.x += 3;
+    // 修改蒙皮
+    pig.findComponentByClass(Sein.SkeletalMeshComponent).changeSkin(game.resource.get<'GlTF'>('blue_pig.gltf').meshes[0]);
+    pig.animator.play(null, Infinity);
 
-    console.log(this.pig);
-
-    const bluePig = game.resource.instantiate<'GlTF'>('blue_pig.gltf').get(0) as any;
-
-    bluePig.findComponentByClass(Sein.SkeletalMeshComponent).changeSkeleton(this.pig.findComponentByClass(Sein.SkeletalMeshComponent));
-
-    this.pig.visible = false;
-    this.pig.animator.event.add('End', this.playNext);
-    this.playNext();
-  }
-
-  private playNext = () => {
-    const {animator} = this.pig;
-
-    let index = this.animations.indexOf(animator.current) + 1;
-
-    if (index >= this.animations.length) {
-      index = 0;
-    }
-
-    animator.play(this.animations[index]);
+    const pig2 = game.resource.instantiate<'GlTF'>('pig.gltf').get(0);
+    const bluePig = game.resource.instantiate<'GlTF'>('blue_pig.gltf').get(0);
+    // 修改骨架
+    bluePig.findComponentByClass(Sein.SkeletalMeshComponent).changeSkeleton(pig2.findComponentByClass(Sein.SkeletalMeshComponent));
+    pig2.visible = false;
+    pig2.animator.play(null, Infinity);
   }
 }
