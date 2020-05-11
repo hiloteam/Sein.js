@@ -6,6 +6,10 @@
 
 ![](workflow.gif)
 
+### ChangeLog
+
+[See ChangeLog](./CHANGELOG.md)
+
 ### Development
 
   * `cd Hilo3d` and run `npm i`.

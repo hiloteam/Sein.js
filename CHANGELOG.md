@@ -1,5 +1,9 @@
 # Change Logs
 
+## 1.5.0
+
+1. 为`SkeletalMeshComponent`添加了`changeSkeleton`方法，可以复用骨架，一般用于换装。
+
 ## 1.4.48
 
 1. 为`PrimitiveComponent`和`SpriteComponent`添加了`preRender`方法用于预渲染（预编译Shader以及提交资源到GPU）来做优化，同时为`SceneActor`同样也添加了这个方法用于在Actor层面处理。
