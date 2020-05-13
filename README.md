@@ -1,5 +1,5 @@
 <p align="center"><a href="https://seinjs.com" target="_blank"><img src="./logo.png" alt="SEIN.JS" width="512"/></a></p>
-<h3 align="center">Modern web game engine</h3>
+<h3 align="center">Progressive web 3D game engine</h3>
 <p align="center">Homepage: <a href="https://seinjs.com" target="_blank">seinjs.com</a></p>
 
 ### Workflow
