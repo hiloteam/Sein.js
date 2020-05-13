@@ -1,13 +1,17 @@
 {
   "extensionsUsed": [
-    "KHR_materials_unlit",
     "Sein_renderer",
+    "Sein_textureImprove",
+    "KHR_materials_unlit",
+    "Sein_imageBasedLighting",
     "Sein_physicBody",
     "Sein_node"
   ],
   "extensionsRequired": [
-    "KHR_materials_unlit",
     "Sein_renderer",
+    "Sein_textureImprove",
+    "KHR_materials_unlit",
+    "Sein_imageBasedLighting",
     "Sein_physicBody",
     "Sein_node"
   ],
@@ -114,9 +118,9 @@
     }
   ],
   "asset": {
-    "generator": "Sein.js Unity Toolkit",
+    "generator": "SEIN.JS Toolkit",
     "version": "2.0",
-    "exporterVersion": "1.0.0"
+    "exporterVersion": "1.2.3"
   },
   "buffers": [
     {
@@ -141,7 +145,11 @@
   ],
   "images": [
     {
-      "uri": "morph/textures/base_0.jpg"
+      "uri": "morph/textures/base_0.png",
+      "extras": {
+        "type": "LDR",
+        "format": "RGB"
+      }
     }
   ],
   "materials": [
@@ -156,8 +164,13 @@
         0.0,
         0.0
       ],
+      "name": "Material4",
       "extensions": {
-        "KHR_materials_unlit": {}
+        "KHR_materials_unlit": {},
+        "Sein_imageBasedLighting": {
+          "light": 0,
+          "type": "DIFFUSE"
+        }
       }
     }
   ],
@@ -194,7 +207,7 @@
         0.0,
         1.0,
         0.0,
-        0.0,
+        2.0,
         0.0,
         0.0,
         1.0
@@ -204,8 +217,32 @@
       "extensions": {
         "Sein_renderer": {
           "castShadows": true,
-          "receiveShadows": true,
-          "gammaCorrection": true
+          "receiveShadows": false
+        },
+        "Sein_physicBody": {
+          "mass": 1.0,
+          "friction": 0.0,
+          "restitution": 0.0,
+          "unControl": false,
+          "physicStatic": false,
+          "sleeping": true,
+          "colliders": [
+            {
+              "name": "box0",
+              "type": "BOX",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "isTrigger": false
+            }
+          ]
         },
         "Sein_node": {
           "selfType": 2,
@@ -221,19 +258,19 @@
           "initOptions": {
             "a": {
               "type": "Int",
-              "value": 1
+              "value": 0
             },
             "b": {
               "type": "Float",
-              "value": 2.0
+              "value": 0.0
             },
             "c": {
               "type": "String",
-              "value": "sss"
+              "value": ""
             },
             "d": {
               "type": "Bool",
-              "value": true
+              "value": false
             },
             "e": {
               "type": "Tex2D",
@@ -244,40 +281,40 @@
             "f": {
               "type": "Vec2",
               "value": [
-                2.0,
-                2.0
+                0.0,
+                0.0
               ]
             },
             "g": {
               "type": "Vec3",
               "value": [
-                1.0,
-                2.0,
-                3.0
+                0.0,
+                0.0,
+                0.0
               ]
             },
             "h": {
               "type": "Vec4",
               "value": [
-                2.0,
-                3.0,
-                4.0,
-                5.0
+                0.0,
+                0.0,
+                0.0,
+                0.0
               ]
             },
             "i": {
               "type": "Quat",
               "value": [
-                2.0,
-                4.0,
-                3.0,
-                5.0
+                0.0,
+                0.0,
+                0.0,
+                0.0
               ]
             },
             "j": {
               "type": "Color",
               "value": [
-                1.0,
+                0.0,
                 0.0,
                 0.0,
                 0.0
@@ -285,73 +322,60 @@
             },
             "k": {
               "type": "Array",
-              "value": [
-                {
-                  "type": "Float",
-                  "value": 2.0
-                },
-                {
-                  "type": "Float",
-                  "value": 3.0
-                },
-                {
-                  "type": "Float",
-                  "value": 4.0
-                },
-                {
-                  "type": "Float",
-                  "value": 2.0
-                },
-                {
-                  "type": "Float",
-                  "value": 5.0
-                }
-              ]
+              "value": []
             },
             "l": {
               "type": "Mat4",
               "value": [
-                2.0,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                1.0,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                3.0,
                 0.0,
                 0.0,
-                4.0
+                0.0,
+                0.0,
+                0.0,
+                0.0
               ]
             },
             "m": {
+              "type": "Mat",
+              "value": {
+                "index": 0
+              }
+            },
+            "n": {
               "type": "Object",
               "value": {
                 "x": {
                   "type": "Int",
-                  "value": 3
+                  "value": 0
                 },
                 "y": {
                   "type": "Float",
-                  "value": 2.0
+                  "value": 0.0
                 },
                 "z": {
                   "type": "Color",
                   "value": [
-                    0.0117120743,
-                    1.0,
+                    0.0,
+                    0.0,
                     0.0,
                     0.0
                   ]
                 },
                 "w": {
-                  "type": "Object",
-                  "value": {}
+                  "type": "Mat",
+                  "value": {
+                    "index": 0
+                  }
                 }
               }
             }
@@ -376,7 +400,78 @@
   "textures": [
     {
       "sampler": 0,
-      "source": 0
+      "source": 0,
+      "extensions": {
+        "Sein_textureImprove": {
+          "isImageCanRelease": false,
+          "anisotropic": 1,
+          "textureType": 5121
+        }
+      }
     }
-  ]
+  ],
+  "extensions": {
+    "Sein_renderer": {
+      "gammaCorrection": true,
+      "useHDR": false,
+      "exposure": 0.0
+    },
+    "Sein_imageBasedLighting": {
+      "lights": [
+        {
+          "diffuse": {
+            "type": "SH",
+            "intensity": 1.0,
+            "coefficients": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  }
 }

@@ -14,6 +14,8 @@ import {createDefaultCamera, createDefaultLights} from '../../utils';
 class TestActor extends Sein.StaticMeshActor {
   public onInit(initOptions: any) {
     console.log('initOptions from gltf:', initOptions);
+
+    initOptions.m.baseColor.set(1, 0.5, 0.5, 1);
   }
 
   public onUpdate(delta: number) {

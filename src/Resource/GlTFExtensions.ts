@@ -177,6 +177,7 @@ SeinNodeExtension.registerOptionParsers('Color', (value: number[]) => new Math.C
 SeinNodeExtension.registerOptionParsers('Tex2D', (value: {index: number}, parser: IGlTFParser) => parser.textures[value.index]);
 SeinNodeExtension.registerOptionParsers('TexCube', (value: {index: number}, parser: IGlTFParser) => parser.cubeTextures[value.index]);
 SeinNodeExtension.registerOptionParsers('Atlas', (value: {index: number}, parser: IGlTFParser) => parser.atlases[value.index]);
+SeinNodeExtension.registerOptionParsers('Mat', (value: {index: number}, parser: IGlTFParser) => parser.materials[value.index]);
 SeinNodeExtension.registerOptionParsers('Array', (value: any[], parser: IGlTFParser, info: ISeinNodeExtension) => {
   return value.map(v => SeinNodeExtension.parseOption(v, parser, info))
 });

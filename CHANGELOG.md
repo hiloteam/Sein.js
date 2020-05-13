@@ -1,5 +1,9 @@
 # Change Logs
 
+## 1.5.2
+
+1. 为glTF中为脚本绑定的初始化参数，添加了内置的`Material`类型支持，需要Unity扩展`1.2.4`版本以上支持。
+
 ## 1.5.1
 
 1. 为`SkeletalMeshComponent`添加了`changeSkin`方法，可以直接保留骨架修改蒙皮，一般用于换装。
