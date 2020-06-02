@@ -9,7 +9,7 @@ import {Vector3, Quaternion} from '../Core/Math';
 import RigidBodyComponent, {IRigidBodyComponentState} from '../Physic/RigidBodyComponent';
 import ColliderComponent from '../Physic/ColliderComponent';
 import SceneActor from '../Renderer/ISceneActor';
-import JointComponent from 'Physic/JointComponent';
+import JointComponent from '../Physic/JointComponent';
 
 /**
  * 支持的碰撞体类型枚举。
