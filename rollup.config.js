@@ -125,7 +125,8 @@ const commonPlugins = [
         'Vector3',
         'Vector3Notifier',
         'Vector4',
-        'SphericalHarmonics3'
+        'SphericalHarmonics3',
+        'Skeleton'
       ]
     }
   })
