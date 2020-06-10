@@ -14,13 +14,19 @@ import Mesh, { isMesh } from '../Mesh/Mesh';
 import SkeletalMesh from '../Mesh/SkeletalMesh';
 import RawShaderMaterial from '../Material/RawShaderMaterial';
 import BreakGuardException from '../Exception/BreakGuardException';
+import Skeleton from '../Mesh/Skeleton';
 
 /**
  * SkeletalMeshComponent的初始化参数。
  * 
  * @noInheritDoc
  */
-export interface ISkeletalMeshComponentState extends IPrimitiveComponentState {}
+export interface ISkeletalMeshComponentState extends IPrimitiveComponentState {
+  /**
+   * 可以传入一个骨架新建。
+   */
+  skeleton?: Skeleton;
+}
 
 /**
  * 判断一个实例是否为`SkeletalMeshComponent`。
@@ -53,10 +59,18 @@ export default class SkeletalMeshComponent<
   protected _list: SkeletalMesh[];
   protected _table: {[materialName: string]: SkeletalMesh};
 
+  /**
+   * 获取骨架。
+   */
+  get skeleton(): Skeleton {
+    return this._mesh.skeleton;
+  }
+
   protected onCreateMesh(state: ISkeletalMeshComponentState): Mesh {
     return new SkeletalMesh({
       geometry: state ? state.geometry : null,
-      material: state ? state.material : null
+      material: state ? state.material : null,
+      skeleton: state ? state.skeleton : null
     });
   }
 

@@ -1,5 +1,9 @@
 # Change Logs
 
+## 1.5.5
+
+1. `SkeletalMeshComponent`暴露了骨架`skeleton`。
+
 ## 1.5.4
 
 1. 修复了解析glTF文件中`CUBICSPLINE`模式下的旋转动画插值问题。

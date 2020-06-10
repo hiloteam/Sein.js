@@ -39,5 +39,15 @@ export default class MainScript extends Sein.LevelScriptActor {
     bluePig.findComponentByClass(Sein.SkeletalMeshComponent).changeSkeleton(pig2.findComponentByClass(Sein.SkeletalMeshComponent));
     pig2.visible = false;
     pig2.animator.play(null, Infinity);
+
+    const pig3 = game.resource.instantiate<'GlTF'>('pig.gltf').get(0);
+    pig3.transform.x -= 3;
+    const oldComp = pig3.findComponentByClass(Sein.SkeletalMeshComponent);
+    const {skeleton} = oldComp;
+    const {geometry, material} = game.resource.get<'GlTF'>('blue_pig.gltf').meshes[0];
+    // 删除原始模型，并从骨架新建
+    pig3.removeComponent(oldComp);
+    pig3.addComponent('blue_pig', Sein.SkeletalMeshComponent, {geometry, material, skeleton});
+    pig3.animator.play(null, Infinity);
   }
 }

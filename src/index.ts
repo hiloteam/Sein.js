@@ -4,7 +4,7 @@
  * @Date   : 2018-7-28 13:54:12
  * @Description:
  */
-export const version = '1.5.4';
+export const version = '1.5.5';
 export const author = 'Tianyu Dai <dtysky@outlook.com>';
 
 /* tslint:disable-line */
@@ -157,6 +157,7 @@ export {default as MorphGeometry, isMorphGeometry} from './Geometry/MorphGeometr
 /* -------------- Mesh --------------- */
 export {default as Mesh, isMesh} from './Mesh/Mesh';
 export {default as SkeletalMesh, isSkeletalMesh} from './Mesh/SkeletalMesh';
+export {default as Skeleton} from './Mesh/Skeleton';
 
 /* -------------- Camera --------------- */
 export {default as CameraComponent, isCameraActor} from './Camera/CameraComponent';
