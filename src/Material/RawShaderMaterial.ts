@@ -500,7 +500,7 @@ void main() {
   /**
    * 获取定制的渲染参数，一般用于宏开关。
    */
-  public getCustomRenderOption(options: any) {
+  public getCustomRenderOption = (options: any) => {
 
   }
 
@@ -523,5 +523,7 @@ void main() {
         texture.destroy();
       }
     }
+
+    return this;
   }
 }

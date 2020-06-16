@@ -155,7 +155,7 @@ void main()
     this.type = options.type;
   }
 
-  public getCustomRenderOption(options: any) {
+  public getCustomRenderOption = (options: any) => {
     if (this.type === 'Cube') {
       options.SKYBOX_CUBE = 1;
     } else if (this.type === 'Panoramic') {

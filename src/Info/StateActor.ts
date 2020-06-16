@@ -27,6 +27,9 @@ export default class StateActor<IOptionTypes extends Object = {}> extends InfoAc
   public isStateActor = true;
   public readonly updatePriority = InfoActor.UPDATE_PRIORITY.State;
 
+  /**
+   * 自定义复制接口，你可以定制改写它。
+   */
   public copy(state: StateActor) {
     if (!state) {
       return;

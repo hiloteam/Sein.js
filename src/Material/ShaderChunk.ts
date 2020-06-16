@@ -8,6 +8,7 @@ import Texture from '../Texture/Texture';
 import CubeTexture from '../Texture/CubeTexture';
 import {Vector2, Vector3, Vector4, Matrix3, Matrix4, Color, SphericalHarmonics3} from '../Core/Math';
 import {ISemanticObject} from './Semantic';
+import Hilo3d from '../Core/Hilo3d';
 
 /**
  * 可用的attribute的预定义的semantic。
@@ -54,7 +55,7 @@ export type TMaterialSemanticUniforms<
  * 自定义的uniform的值。
  */
 export interface IMaterialUniform {
-  value: Texture | CubeTexture | number | number[] | SphericalHarmonics3 | Vector2 | Vector3 | Vector4 | Matrix3 | Matrix4 | Color;
+  value: Texture | CubeTexture | number | number[] | SphericalHarmonics3 | Vector2 | Vector3 | Vector4 | Matrix3 | Matrix4 | Color | Hilo3d.TypedArray;
   isGlobal?: boolean;
 }
 
