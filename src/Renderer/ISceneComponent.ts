@@ -23,7 +23,7 @@ export interface ISceneComponentState {
   /**
    * 初始旋转数据。
    */
-  rotation?: Math.Vector3;
+  rotation?: Math.Euler;
   /**
    * 初始缩放数据。
    */
@@ -62,7 +62,7 @@ export default interface ISceneComponent<IStateTypes extends ISceneComponentStat
   readonly hiloNode: Hilo3d.Node;
   visible: boolean;
   position: Math.Vector3;
-  rotation: Math.Vector3;
+  rotation: Math.Euler;
   scale: Math.Vector3;
   pivot: Math.Vector3;
   quaternion: Math.Quaternion;

@@ -133,7 +133,7 @@ export default class SceneComponent<
   /**
    * 设置本地空间旋转数据。
    */
-  set rotation(rotation: Math.Vector3) {
+  set rotation(rotation: Math.Euler) {
     this._node.rotation.copy(rotation);
   }
 
