@@ -196,7 +196,7 @@ export default class GlTFLoader extends ResourceLoader<IGlTFResourceEntity> {
       };
     }
 
-    Hilo3d.GLTFParser.registerExtensionHandler(hander.name, hander as {parse: Function});
+    Hilo3d.GLTFParser.registerExtensionHandler(hander.name, hander as any);
   }
 
   /**

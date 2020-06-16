@@ -105,7 +105,7 @@ export default class CubeTextureLoader extends ResourceLoader<ICubeTextureResour
       isImageCanRelease: entity.isImageCanRelease
     } as any)
     .then(result => {
-      entity.result = result;
+      entity.result = result as CubeTexture;
       callbacks.onLoaded(entity);
     })
     .catch(error => callbacks.onError(entity, error));

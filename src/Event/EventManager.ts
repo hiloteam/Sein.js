@@ -236,6 +236,7 @@ export default class EventManager<IDefaultEvents extends any = {}> extends SObje
    * 分发某个缓存的事件，一般不需要自行触发。
    */
   public flush<TKey extends keyof IDefaultEvents>(type: TKey): this;
+  public flush(type: string): this;
   public flush(type: string): this {
     if (!this._observables[type as string]) {
       throw new MissingMemberException(this, 'Event', type, this, 'Register it before flush !');

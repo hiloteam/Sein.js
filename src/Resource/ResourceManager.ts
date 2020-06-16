@@ -39,7 +39,7 @@ export function isResourceManager(value: SObject): value is ResourceManager {
  * @noInheritDoc
  */
 @SClass({className: 'ResourceManager'})
-export default class ResourceManager<IDefaultLoaders extends any = {}> extends SObject {
+export default class ResourceManager<IDefaultLoaders extends {[type: string]: any} = {}> extends SObject {
   public isResourceManager = true;
 
   protected _onError = new Observable<{error: Error, state: IResourceState}>(this);
