@@ -1,5 +1,9 @@
 # Change Logs
 
+## 1.5.7
+
+1. 完善了部分类型定义。
+
 ## 1.5.6
 
 1. `SkeletalMeshComponent`暴露了骨架`skeleton`。
