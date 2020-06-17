@@ -24,7 +24,7 @@ class MainScript extends Sein.LevelScriptActor {
     for (let index = 0; index < 30; index += 1) {
       world.addActor('red', Sein.BSPBoxActor, {
         width: 1, height: 1, depth: 1,
-        position: generateRandomVec3(index * 2), rotation: new Sein.Vector3(Math.random(), Math.random(), Math.random()),
+        position: generateRandomVec3(index * 2), rotation: new Sein.Euler(Math.random(), Math.random(), Math.random()),
         material: new Sein.PBRMaterial({baseColor: new Sein.Color(Math.random(), Math.random(), Math.random())})
       });
 
@@ -32,7 +32,7 @@ class MainScript extends Sein.LevelScriptActor {
         width: 1.8, height: 2,
         atlas: game.resource.get<'Atlas'>('22.json'),
         frameName: `0${index % 9 + 1}`,
-        position: generateRandomVec3(index * 2), rotation: new Sein.Vector3(Math.random(), Math.random(), Math.random()),
+        position: generateRandomVec3(index * 2), rotation: new Sein.Euler(Math.random(), Math.random(), Math.random()),
         isBillboard: true
       });
     }

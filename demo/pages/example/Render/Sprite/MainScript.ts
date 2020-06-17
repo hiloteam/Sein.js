@@ -40,7 +40,7 @@ export default class MainScript extends Sein.LevelScriptActor {
       position: new Sein.Vector3(2, 0, 0)
     });
 
-    const empty = world.addActor('empty', Sein.SceneActor, {rotation: new Sein.Vector3(1, 0, 0)});
+    const empty = world.addActor('empty', Sein.SceneActor, {rotation: new Sein.Euler(1, 0, 0)});
     empty.addComponent('22', Sein.SpriteComponent, {
       width: 1.8, height: 2,
       atlas: game.resource.get<'Atlas'>('22.json'),

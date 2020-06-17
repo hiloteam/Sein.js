@@ -151,7 +151,7 @@ export default class MainScript extends Sein.LevelScriptActor<LevelState> {
       fov: 60,
       near: 0.01,
       far: 200,
-      rotation: new Sein.Vector3(0, Math.PI, 0),
+      rotation: new Sein.Euler(0, Math.PI, 0),
       position: new Sein.Vector3(0, 2, -6)
     });
     camera.lookAt(hero);

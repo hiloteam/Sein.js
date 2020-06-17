@@ -44,7 +44,7 @@ class CustomSceneActor extends Sein.SceneActor {
         radiusTop: .5, radiusBottom: .5, height: 3,
         material: actorMaterial,
         position: new Sein.Vector3(-3.5, 1, 0),
-        rotation: new Sein.Vector3(0, 0, Sein.degToRad(90))
+        rotation: new Sein.Euler(0, 0, Sein.degToRad(90))
       },
       body
     );
@@ -56,7 +56,7 @@ class CustomSceneActor extends Sein.SceneActor {
         radiusTop: .5, radiusBottom: .5, height: 3,
         material: actorMaterial,
         position: new Sein.Vector3(3.5, 1, 0),
-        rotation: new Sein.Vector3(0, 0, Sein.degToRad(90))
+        rotation: new Sein.Euler(0, 0, Sein.degToRad(90))
       },
       body
     );
