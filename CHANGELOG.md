@@ -1,4 +1,7 @@
 # Change Logs
+## 1.5.8
+
+1. `SceneComponent.cloneFromHiloNode` 增加了 clone `name`。
 
 ## 1.5.7
 
