@@ -658,6 +658,8 @@ export default class SceneComponent<
 
     this._node.jointName = node.jointName;
     this._node.animationId = node.animationId;
+    this._node.name = node.name;
+
   }
 
   /**
