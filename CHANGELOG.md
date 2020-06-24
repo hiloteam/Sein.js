@@ -1,4 +1,8 @@
 # Change Logs
+## 1.5.9
+
+1. 更新 Hilo3d 到 `1.15.1`。
+
 ## 1.5.8
 
 1. `SceneComponent.cloneFromHiloNode` 增加了 clone `name`。
