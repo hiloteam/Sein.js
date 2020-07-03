@@ -96,7 +96,7 @@ function generateActorOrComponentFromNode(
       (parentActor as any).skeletalMeshComponents.push([root, meshes]);
     } else {
       root = (result = world.addActor(node.name, Class || SkeletalMeshActor, initOptions, parentActor, parent)).root;
-      (parentActor as any).skeletalMeshComponents = [[root, meshes]];
+      root.getOwner().skeletalMeshComponents = [[root, meshes]];
     }
   } else if ((child as Hilo3d.Mesh).isMesh) {
     let length = node.children.length;
