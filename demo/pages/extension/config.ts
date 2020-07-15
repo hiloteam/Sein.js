@@ -26,6 +26,8 @@ export default {
   containers: [
     {path: 'none', label: {en: 'None', cn: 'None'}},
     {path: 'react', label: {en: 'React', cn: 'React'}},
+    {path: 'wx-mini-program', label: {en: 'WX Mini Program', cn: '微信小程序'}},
+    {path: 'wx-mini-game', label: {en: 'WX Mini Game', cn: '微信小游戏'}},
     {path: 'my-tiny-program', label: {en: 'MY Tiny Program', cn: '阿里小程序'}},
     {path: 'my-tiny-game', label: {en: 'MY Tiny Game', cn: '阿里小游戏'}}
   ],

@@ -6,7 +6,7 @@
 
 ## 实例
 
-视频
+<video style="max-width: 1000px" src="https://gw.alipayobjects.com/mdn/rms_eb930c/afts/file/A*EuXOTLX99JAAAAAAAAAAAABkARQnAQ" controls></video>
 
 ## 使用
 

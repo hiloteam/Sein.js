@@ -21,8 +21,6 @@ const SEINJS_GROUP = [
     desc: (
       <p>
         Sein.js全局设计和内核开发，Hilo3d核心成员，工具链设计和维护。专攻游戏架构、图形学和性能优化在前端方向的应用，有任何问题可以直接钉钉搜索<b>瞬光</b>联系或者邮箱到
-        <a href="mailto:shunguang.dty@antfin.com" target="_blank">shunguang.dty@antfin.com</a>
-        或
         <a href="mailto:dtysky@outlook.com" target="_blank">dtysky@outlook.com</a>。
       </p>
     )
@@ -34,7 +32,7 @@ const SEINJS_GROUP = [
     link: 'https://github.com/06wj',
     desc: (
       <p>
-        Sein.js渲染层 Hilo3d 的核心成员，以及目前的主要维护者。在WebGL、图形互动领域有多年经验，擅长解决疑难杂症，非常靠谱。我们未来还会就新一代渲染引擎等有更深入的合作。
+        Sein.js主要维护者以及渲染层 Hilo3d 的核心开发者。在WebGL、图形互动领域有多年经验，擅长解决疑难杂症，非常靠谱。。
       </p>
     )
   },
@@ -109,7 +107,7 @@ const SEINJS_GROUP = [
     avatar: getStaticAssetUrl('/assets/contributors/dongqu.png'),
     desc: (
       <p>
-        在Autodesk工作五年，其间积累了丰富的3D图形经验。目前积极寻找Sein.js的业务应用场景，并会加入下一代渲染引擎的建设。
+        在Autodesk工作五年，其间积累了丰富的3D图形经验。目前积极寻找Sein.js的业务应用场景，并已经在业务中体现。
       </p>
     )
   },

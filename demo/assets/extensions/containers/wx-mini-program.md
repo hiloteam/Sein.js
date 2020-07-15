@@ -2,9 +2,11 @@
 
 适配微信小程序的容器。
 
+>微信小程序暂不支持`2d-context`的**离屏canvas**，所以图集的一些功能可能无法使用！
+
 ## 实例
 
-视频
+<video style="max-width: 400px" src="https://gw.alipayobjects.com/mdn/rms_eb930c/afts/file/A*sGaZS7E-jskAAAAAAAAAAABkARQnAQ" controls></video>
 
 ## 使用
 
