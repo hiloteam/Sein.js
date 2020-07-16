@@ -14,13 +14,13 @@ import './base.scss';
 
 const SEINJS_GROUP = [
   {
-    name: '瞬光',
+    name: 'H光',
     title: '前端技术专家',
     avatar: getStaticAssetUrl('/assets/contributors/h.png'),
     link: 'https://github.com/dtysky',
     desc: (
       <p>
-        Sein.js全局设计和内核开发，Hilo3d核心成员，工具链设计和维护。专攻游戏架构、图形学和性能优化在前端方向的应用，有任何问题可以直接钉钉搜索<b>瞬光</b>联系或者邮箱到
+        Sein.js全局设计和内核开发，Hilo3d核心成员，工具链设计和维护。专攻游戏架构、图形学和性能优化在前端方向的应用，有任何问题可以直接微信搜索<b>dtysky</b>联系或者邮箱到
         <a href="mailto:dtysky@outlook.com" target="_blank">dtysky@outlook.com</a>。
       </p>
     )

@@ -12,7 +12,10 @@ import {TConstructor} from '../types/Common';
 /**
  * 触摸相关HID触发器的接口。
  */
-export interface ITouchTrigger extends TConstructor<EventTrigger<ITouchEvent>> {}
+export interface ITouchTrigger extends TConstructor<EventTrigger<ITouchEvent>> {
+  needPreventDefault: boolean;
+  needStopPropagation: boolean;
+}
 
 /**
  * @hidden

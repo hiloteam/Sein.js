@@ -1,5 +1,6 @@
 # Change Logs
-## 1.5.12
+
+## 1.5.13
 1. 修复事件系统 once bug
 1. 增加 TouchTrigger.needPreventDefault & TouchTrigger.needStopPropagation 配置
 
