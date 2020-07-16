@@ -20,6 +20,8 @@ export interface ITouchTrigger extends TConstructor<EventTrigger<ITouchEvent>> {
 function createTouchTrigger(className: string, eventName: string): ITouchTrigger {
   @SClass({className})
   class TouchEventTrigger extends EventTrigger<ITouchEvent> {
+    public static needPreventDefault = true;
+    public static needStopPropagation = true;
     public isTouchEventTrigger = true;
     public autoFlush = false;
 
@@ -28,8 +30,13 @@ function createTouchTrigger(className: string, eventName: string): ITouchTrigger
     }
 
     public onTrigger(event: ITouchEvent) {
-      event.preventDefault();
-      event.stopPropagation();
+      if (TouchEventTrigger.needPreventDefault) {
+        event.preventDefault();
+      }
+
+      if (TouchEventTrigger.needStopPropagation) {
+        event.stopPropagation();
+      }
 
       super.onTrigger(event);
     }
