@@ -127,8 +127,9 @@ export default class Observable<TParams extends Object = any> extends SObject {
    * 通过一个参数触发一次广播，调用所有回调。
    */
   public notify(params: TParams) {
+    const originLength = this._queue.length;
     this._index = 0;
-    this._length = this._queue.length;
+    this._length = originLength;
 
     while (this._index < this._length) {
       const {callback, isOnce} = this._queue[this._index];
@@ -147,6 +148,10 @@ export default class Observable<TParams extends Object = any> extends SObject {
       } catch (error) {
         throwException(error, this);
       }
+    }
+
+    if (originLength > 0 && this._length === 0) {
+      this.onEmpty();
     }
 
     return this;
