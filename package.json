@@ -1,6 +1,6 @@
 {
   "name": "seinjs",
-  "version": "1.5.11",
+  "version": "1.5.12",
   "description": "Modern game engine.",
   "main": "lib/seinjs.js",
   "module": "lib/seinjs.es.js",
