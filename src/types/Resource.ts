@@ -404,6 +404,7 @@ export interface ISeinImageBasedLightingSourceExtension {
     specular: {
       type: 'CUBE' | '2D';
       intensity: number;
+      includeMipmaps: boolean;
       brdfLUT: {index: number};
       map: {index: number};
     };
@@ -512,6 +513,7 @@ export interface ISeinImageBasedLight {
     intensity: number;
     brdfLUTIndex: number;
     brdfLUT: Texture;
+    includeMipmaps?: boolean;
     cubeMap?: CubeTexture;
     mapIndex?: number;
     map?: Texture;

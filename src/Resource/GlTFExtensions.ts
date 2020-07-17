@@ -441,6 +441,7 @@ export const SeinImageBasedLightingExtension: IGlTFExtension<ISeinImageBasedLigh
           type: light.specular.type,
           intensity: light.specular.intensity,
           brdfLUTIndex: light.specular.brdfLUT.index,
+          includeMipmaps: light.specular.includeMipmaps,
           brdfLUT: null,
           cubeMap: null
         } : null
@@ -481,11 +482,12 @@ export const SeinImageBasedLightingExtension: IGlTFExtension<ISeinImageBasedLigh
     const light = parser.imageBasedLights[lIndex] as ISeinImageBasedLight;
 
     if (isPBRMaterial(material)) {
-      // (material as any).isDiffuesEnvAndAmbientLightWorkTogether = true;
+      // (material as any).isDiffuseEnvAndAmbientLightWorkTogether = true;
       if (type == 'ALL') {
         material.brdfLUT = light.specular.brdfLUT;
         material.specularEnvIntensity = light.specular.intensity;
         material.specularEnvMap = light.specular.map;
+        material.isSpecularEnvMapIncludeMipmaps = light.specular.includeMipmaps;
       }
 
       material.diffuseEnvIntensity = light.diffuse.intensity;
@@ -504,6 +506,7 @@ export const SeinImageBasedLightingExtension: IGlTFExtension<ISeinImageBasedLigh
         material.setUniform('u_brdfLUT', light.specular.brdfLUT);
         material.setUniform('u_specularEnvIntensity', light.specular.intensity);
         material.setUniform('u_specularEnvMap', light.specular.map);
+        (material as any).isSpecularEnvMapIncludeMipmaps = light.specular.includeMipmaps;
       }
 
       material.setUniform('u_diffuseEnvIntensity', light.diffuse.intensity);

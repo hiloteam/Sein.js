@@ -4,7 +4,7 @@
  * @Date   : 2018-7-28 13:54:12
  * @Description:
  */
-export const version = '1.5.13';
+export const version = '1.5.14';
 export const author = 'Tianyu Dai <dtysky@outlook.com>';
 
 /* tslint:disable-line */

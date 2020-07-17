@@ -1,6 +1,11 @@
 # Change Logs
 
+## 1.5.14
+
+1. 通过特殊手段，支持了安卓不支持纹理采样LOD的问题。
+
 ## 1.5.13
+
 1. 修复事件系统 once bug
 1. 增加 TouchTrigger.needPreventDefault & TouchTrigger.needStopPropagation 配置
 
