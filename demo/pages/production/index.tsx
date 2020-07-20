@@ -51,6 +51,15 @@ const PRODUCTIONS = [
     )
   },
   {
+    name: '这就是街舞',
+    onwer: '支付宝x优酷',
+    cover: 'hiphop',
+    video: 'https://gw.alipayobjects.com/mdn/rms_eb930c/afts/file/A*qtumSYV8_44AAAAAAAAAAABkARQnAQ',
+    desc: (
+      <p>优酷和支付宝合作的3D项目，使用动捕数据和和音乐结合，利用Sein.js提供的换装功能实现了换装系统，取得了不错的效果。</p>
+    )
+  },
+  {
     name: '3D物料展厅',
     onwer: '支付宝商家业务',
     cover: '3d-materials-gallery',
