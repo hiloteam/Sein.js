@@ -10,6 +10,3 @@ dist
 package-lock.json
 demo/assets/documents
 demo/pages/document/config.ts
-extensions
-materials
-Hilo3d
