@@ -46,9 +46,9 @@ const GUIDE: {
 };
 
 class MyRenderer extends marked.Renderer {
-  public heading(text: string, level: number, raw: string) {
+  public heading(text: string, level: number, raw: string, slugger?: any) {
     if (level === 1) {
-      return super.heading(text, level, raw);
+      return (super.heading as any)(text, level, raw, slugger);
     }
 
     text = raw.replace(/#/g, '').replace(/\//g, '');

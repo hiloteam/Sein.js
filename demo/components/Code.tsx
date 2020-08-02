@@ -33,7 +33,7 @@ export default class CodeView extends React.PureComponent<IPropTypes> {
   public render() {
     const text = `\`\`\`ts
 ${this.props.code}
-    \`\`\``;
+\`\`\``;
 
     return (
       <Card
