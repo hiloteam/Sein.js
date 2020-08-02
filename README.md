@@ -12,8 +12,8 @@
 
 ### Development
 
-  * `cd Hilo3d` and run `npm i`.
   * Pull all sub modules: `git submodule init` then `git submodule update`.
+  * `cd Hilo3d` and run `npm i`.
   * Switch to root folder and run `npm i`.
   * run `npm run dev` to dev.
   * run `npm run build` release the code.
