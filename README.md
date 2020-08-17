@@ -25,7 +25,7 @@
  * [hiloteam](https://github.com/hiloteam)
 
 ### Contact us
-  * Weixin Group: ![wx](demo/assets/wx-qrcode.png)
+  * Weixin Group: ![wx](demo/assets/wx-qrcode.jpg)
 
 ### License
 
