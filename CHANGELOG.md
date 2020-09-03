@@ -1,4 +1,9 @@
 # Change Logs
+## 1.5.16
+
+1. 更新 Hilo3d 到 `1.15.8`
+2. 增加 export Sein.Hilo3d
+
 ## 1.5.15
 
 1. 更新 Hilo3d 到 `1.15.7`。
