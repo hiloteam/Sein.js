@@ -31,6 +31,7 @@ export {default as Level, isLevel} from './Core/Level';
 export {default as Ticker, isTicker} from './Core/Ticker';
 export {default as Tween} from './Core/Tween';
 export {default as Observable, isObservable} from './Core/Observable';
+export {default as Hilo3d} from './Core/Hilo3d';
 export * from './Core/Decorator';
 export {default as Constants} from './Core/Constants';
 export * from './Core/MetaTypes';
