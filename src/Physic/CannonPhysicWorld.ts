@@ -280,9 +280,9 @@ export default class CannonPhysicWorld extends SObject implements IPhysicWorld {
         const {body, shape, distance, hitPointWorld} = this._rayResult;
         result.push({rigidBody: body.component, collider: shape.component, actor: body.component.getOwner(), distance, point: new Vector3(hitPointWorld.x, hitPointWorld.y, hitPointWorld.z)});
       }
-
-      onPick(result);
+      
     }
+    onPick(result);
 
     return hit;
   }
