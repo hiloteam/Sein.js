@@ -1,4 +1,6 @@
 # Change Logs
+## 1.5.17
+1. Fix: CannonPhysicWorld:the onPick callback should be triggered when no object is selected
 ## 1.5.16
 
 1. 更新 Hilo3d 到 `1.15.8`
