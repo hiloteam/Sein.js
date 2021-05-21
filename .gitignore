@@ -8,5 +8,8 @@ dist
 **/lib/*
 .rpt2_cache
 package-lock.json
-demo/assets/documents
-demo/pages/document/config.ts
+demo
+demo
+extensions
+Hilo3d
+materials
