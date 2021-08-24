@@ -1,4 +1,6 @@
 # Change Logs
+## 1.5.18
+1. Fix: Repair the bug that the transparency of unlit material does not take effect
 ## 1.5.17
 1. Fix: CannonPhysicWorld:the onPick callback should be triggered when no object is selected
 ## 1.5.16
