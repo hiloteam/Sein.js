@@ -538,12 +538,12 @@ export interface ISeinCustomMaterialSourceExtension {
  */
 export interface INodeGlTFExtensions {
   [name: string]: any;
-  Sein_node?: ISeinNodeExtension;
-  Sein_physicBody?: ISeinPhysicBodyExtension;
-  Sein_animator?: ISeinAnimatorExtension;
-  Sein_renderer?: ISeinRendererExtension;
-  Sein_ambientLight?: ISeinAmbientLightExtension;
-  Sein_sprite?: ISeinSpriteExtension;
+  SEIN_node?: ISeinNodeExtension;
+  SEIN_physicBody?: ISeinPhysicBodyExtension;
+  SEIN_animator?: ISeinAnimatorExtension;
+  SEIN_renderer?: ISeinRendererExtension;
+  SEIN_ambientLight?: ISeinAmbientLightExtension;
+  SEIN_sprite?: ISeinSpriteExtension;
 }
 
 /**

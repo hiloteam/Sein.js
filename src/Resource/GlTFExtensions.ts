@@ -41,7 +41,7 @@ import Material from '../Material/Material';
 /**
  * GlTF扩展的接口类型。
  * 
- * @member name 扩展的名字，比如`Sein_node`。
+ * @member name 扩展的名字，比如`SEIN_node`。
  * @member init 文件初始化时，遇到该扩展或执行的方法。
  * @member parseOnLoad 文件解析时，遇到全局扩展时将会执行的方法，此时资源可能没有加载完毕。
  * @member parseOnEnd 文件解析时，遇到全局扩展时将会执行的方法，此时资源均已加载完毕。
@@ -118,7 +118,7 @@ export const SeinNodeExtension: IGlTFExtension<ISeinNodeExtension> = {
       return SeinNodeExtension.optionParsers[type](value, parser, info);
     }
     else {
-      throw new Error(`You must register parser for type '${type}' in Sein_node.initOptions !`);
+      throw new Error(`You must register parser for type '${type}' in SEIN_node.initOptions !`);
     }
   },
   parse(info: ISeinNodeExtension, parser: IGlTFParser, node: INodeWithGlTFExtensions, options?: any) {
@@ -261,7 +261,7 @@ export const SeinAnimatorExtension: IGlTFExtension<ISeinNodeExtension> = {
 export const SeinRendererExtension: IGlTFExtension<ISeinRendererExtension> = {
   name: 'SEIN_renderer',
   parseOnLoad(info, parser: IGlTFParser) {
-    parser['renderer'] = parser.json.extensions.Sein_renderer || {};
+    parser['renderer'] = parser.json.extensions.SEIN_renderer || {};
   },
   parseOnEnd(info, parser: IGlTFParser, model: IGlTFModel) {
     model['renderer'] = parser['renderer'];
@@ -363,7 +363,7 @@ export const SeinCubeTextureExtension: IGlTFExtension = {
     const game: Game = parser.game;
     const actions = [];
     const extensions = parser.json.extensions || {};
-    const source: ISeinCubeTextureExtension = extensions.Sein_cubeTexture || {};
+    const source: ISeinCubeTextureExtension = extensions.SEIN_cubeTexture || {};
     const textures = source.textures || [];
     const cubeTextures: CubeTexture[] = [];
     parser.cubeTextures = cubeTextures;
@@ -425,7 +425,7 @@ export const SeinImageBasedLightingExtension: IGlTFExtension<ISeinImageBasedLigh
   init(_, parser: IGlTFParser) {
     const game: Game = parser.game;
     const extensions = parser.json.extensions || {};
-    const iblSources: ISeinImageBasedLightingSourceExtension = extensions.Sein_imageBasedLighting || {};
+    const iblSources: ISeinImageBasedLightingSourceExtension = extensions.SEIN_imageBasedLighting || {};
     const lights = iblSources.lights || [];
     const imageBasedLights: ISeinImageBasedLight[] = [];
     parser.imageBasedLights = imageBasedLights;
@@ -532,7 +532,7 @@ export const SeinAtlasExtension: IGlTFExtension = {
     const game: Game = parser.game;
     const actions = [];
     const extensions = parser.json.extensions || {};
-    const ex: ISeinAtlasExtension = extensions.Sein_atlas || {};
+    const ex: ISeinAtlasExtension = extensions.SEIN_atlas || {};
     const atlasesSource = ex.atlases || [];
     const atlases: AtlasManager[] = [];
     parser.atlases = atlases;
@@ -593,7 +593,7 @@ export const SeinCustomMaterialExtension: IGlTFExtension = {
   init(_, parser: IGlTFParser) {
     const actions = [];
     const extensions = parser.json.extensions || {};
-    const ex: ISeinCustomMaterialSourceExtension = extensions.Sein_customMaterial || {};
+    const ex: ISeinCustomMaterialSourceExtension = extensions.SEIN_customMaterial || {};
     const scripts = ex.scripts || [];
     parser.scripts = scripts;
 
@@ -635,7 +635,7 @@ export const SeinSpriteExtension: IGlTFExtension<ISeinSpriteExtension> = {
   name: 'SEIN_sprite',
   init(_, parser: IGlTFParser) {
     const extensions = parser.json.extensions || {};
-    const ex: ISeinSpriteSourceExtension = extensions.Sein_sprite || {};
+    const ex: ISeinSpriteSourceExtension = extensions.SEIN_sprite || {};
     parser.sprites = (ex.sprites || []).map(sprite => {
       const res = new FakeHiloSprite();
       res.sprite = sprite;

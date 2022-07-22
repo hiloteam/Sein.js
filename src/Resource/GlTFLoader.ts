@@ -39,7 +39,7 @@ export interface IGlTFResourceEntity extends IResourceEntity {
    */
   isProgressive?: boolean;
   /**
-   * 是否要忽略材质加载错误，通常用于`Sein_customMaterial`的场合。
+   * 是否要忽略材质加载错误，通常用于`SEIN_customMaterial`的场合。
    */
   ignoreMaterialError?: boolean;
   /**
@@ -149,7 +149,7 @@ function materialCreator(name: string, metaData: any, json: any, parser: IGlTFPa
 
   material.initCommonOptions(options, true);
 
-  const {Sein_customMaterial, ...others} = extensions;
+  const {SEIN_customMaterial, Sein_customMaterial, ...others} = extensions;
   parser.parseExtensions(others, material, {isMaterial: true});
 
   return material;
@@ -197,6 +197,10 @@ export default class GlTFLoader extends ResourceLoader<IGlTFResourceEntity> {
     }
 
     Hilo3d.GLTFParser.registerExtensionHandler(hander.name, hander as any);
+    const seinAdaptivePrefix = hander.name.replace('SEIN_', 'Sein_');
+    if (seinAdaptivePrefix !== hander.name) {
+      Hilo3d.GLTFParser.registerExtensionHandler(seinAdaptivePrefix, hander as any);
+    }
   }
 
   /**

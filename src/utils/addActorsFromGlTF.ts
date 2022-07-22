@@ -57,15 +57,15 @@ function generateActorOrComponentFromNode(
 
   let Class;
   let initOptions: any = {__fromGlTF: true, matrix: node.matrix};
-  if (node.gltfExtensions.Sein_node && node.gltfExtensions.Sein_node.className) {
-    const className = node.gltfExtensions.Sein_node.className;
+  if (node.gltfExtensions.SEIN_node && node.gltfExtensions.SEIN_node.className) {
+    const className = node.gltfExtensions.SEIN_node.className;
     Class = MetaSClasses[className];
 
     if (!Class) {
       Debug.warn(`No class named '${className}', no effect, you must use decorator 'SClass' to annotate your class before use it !`);
     }
     else {
-      Object.assign(initOptions, node.gltfExtensions.Sein_node.initOptions || {});
+      Object.assign(initOptions, node.gltfExtensions.SEIN_node.initOptions || {});
     }
   }
   
@@ -241,8 +241,8 @@ function convert(
     }
   }
 
-  if (parentNode && parentNode.gltfExtensions && parentNode.gltfExtensions.Sein_node) {
-    parentSeinNode = parentNode.gltfExtensions.Sein_node;
+  if (parentNode && parentNode.gltfExtensions && parentNode.gltfExtensions.SEIN_node) {
+    parentSeinNode = parentNode.gltfExtensions.SEIN_node;
   } else {
     parentSeinNode = {};
   }
@@ -256,8 +256,8 @@ function convert(
 
     let childSeinNode: ISeinNodeExtension;
     let skipThisNode: boolean = false;
-    if (child.gltfExtensions.Sein_node) {
-      childSeinNode = child.gltfExtensions.Sein_node;
+    if (child.gltfExtensions.SEIN_node) {
+      childSeinNode = child.gltfExtensions.SEIN_node;
       skipThisNode = childSeinNode.skipThisNode;
     }
 
@@ -416,8 +416,8 @@ export default function addActorsFromGlTF(
       hiloNode.anim = resource.anim.clone(null);
       (hiloNode as any).anim.nodeNameMap = animNameMap;
 
-      if (hiloNode.gltfExtensions.Sein_animator) {
-        const {modelAnimations, prefix, prefixes} = hiloNode.gltfExtensions.Sein_animator;
+      if (hiloNode.gltfExtensions.SEIN_animator) {
+        const {modelAnimations, prefix, prefixes} = hiloNode.gltfExtensions.SEIN_animator;
 
         length = modelAnimations.length;
 
@@ -435,8 +435,8 @@ export default function addActorsFromGlTF(
 
       a.addComponent('animator', AnimatorComponent);
 
-      if (hiloNode.gltfExtensions.Sein_animator) {
-        const {defaultAnimation} = hiloNode.gltfExtensions.Sein_animator;
+      if (hiloNode.gltfExtensions.SEIN_animator) {
+        const {defaultAnimation} = hiloNode.gltfExtensions.SEIN_animator;
 
         if (defaultAnimation) {
           a.animator.setDefault(defaultAnimation);
