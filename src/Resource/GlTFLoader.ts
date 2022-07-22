@@ -77,12 +77,12 @@ export type IGlTFInstantResult = SArray<SceneActor>;
  * @hidden
  */
 function materialCreator(name: string, metaData: any, json: any, parser: IGlTFParser) {
-  if (!metaData || !metaData.extensions || !metaData.extensions['Sein_customMaterial']) {
+  if (!metaData || !metaData.extensions || !metaData.extensions['SEIN_customMaterial']) {
     return;
   }
 
   const {extensions, alphaMode, doubleSided} = metaData;
-  const {className, uniforms, cloneForInst, renderOrder} = extensions['Sein_customMaterial'];
+  const {className, uniforms, cloneForInst, renderOrder} = extensions['SEIN_customMaterial'];
 
   const MaterialClass = MetaSMaterials[className] as {new(...args: any): RawShaderMaterial};
 

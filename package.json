@@ -1,6 +1,6 @@
 {
   "name": "seinjs",
-  "version": "1.5.18",
+  "version": "1.6.0",
   "description": "Modern game engine.",
   "main": "lib/seinjs.js",
   "module": "lib/seinjs.es.js",
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:SeinJS/Sein.js.git"
+    "url": "git+git@github.com:hiloteam/Sein.js.git"
   },
   "authors": [
     {
@@ -40,9 +40,9 @@
     "CHANGELOG.md"
   ],
   "bugs": {
-    "url": "http://github.com/SeinJS/Sein.js/issues"
+    "url": "http://github.com/hiloteam/Sein.js/issues"
   },
-  "homepage": "http://github.com/SeinJS/Sein.js#readme",
+  "homepage": "http://github.com/hiloteam/Sein.js#readme",
   "devDependencies": {
     "@types/cannon": "^0.1.3",
     "@types/classnames": "0.0.32",

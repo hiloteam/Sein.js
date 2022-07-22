@@ -104,7 +104,7 @@ export const AliAMCExtension = (Hilo3d as any).AliAMCExtension as {
  * @hidden
  */
 export const SeinNodeExtension: IGlTFExtension<ISeinNodeExtension> = {
-  name: 'Sein_node',
+  name: 'SEIN_node',
   optionParsers: {},
   registerOptionParsers(type: string, parser: (value: any, parser: IGlTFParser, info: ISeinNodeExtension) => any) {
     SeinNodeExtension.optionParsers[type] = parser;
@@ -195,7 +195,7 @@ SeinNodeExtension.registerOptionParsers('Object', (value: Object, parser: IGlTFP
  * @hidden
  */
 export const SeinPhysicBodyExtension: IGlTFExtension<ISeinPhysicBodyExtension> = {
-  name: 'Sein_physicBody',
+  name: 'SEIN_physicBody',
   instantiate(entity: SceneActor | SceneComponent, info: ISeinPhysicBodyExtension, game: Game) {
     if (!isSceneActor(entity)) {
       Debug.warn(`You could not add physicBody to a component: ${entity.name}, ignore...`);
@@ -246,7 +246,7 @@ export const SeinPhysicBodyExtension: IGlTFExtension<ISeinPhysicBodyExtension> =
  * @hidden
  */
 export const SeinAnimatorExtension: IGlTFExtension<ISeinNodeExtension> = {
-  name: 'Sein_animator',
+  name: 'SEIN_animator',
   instantiate(entity: SceneActor | SceneComponent) {
     if (!isSceneActor(entity)) {
       Debug.warn(`You could not add animator to a component: ${entity.name}, ignore...`);
@@ -259,7 +259,7 @@ export const SeinAnimatorExtension: IGlTFExtension<ISeinNodeExtension> = {
  * @hidden
  */
 export const SeinRendererExtension: IGlTFExtension<ISeinRendererExtension> = {
-  name: 'Sein_renderer',
+  name: 'SEIN_renderer',
   parseOnLoad(info, parser: IGlTFParser) {
     parser['renderer'] = parser.json.extensions.Sein_renderer || {};
   },
@@ -316,7 +316,7 @@ export const SeinRendererExtension: IGlTFExtension<ISeinRendererExtension> = {
  * @hidden
  */
 export const SeinAmbientLightExtension: IGlTFExtension<ISeinAmbientLightExtension> = {
-  name: 'Sein_ambientLight',
+  name: 'SEIN_ambientLight',
   parseOnEnd(info, parser: IGlTFParser, model: IGlTFModel) {
     const {color, intensity} = info;
 
@@ -358,7 +358,7 @@ function getRelativePath(basePath: string, path: string) {
  * @hidden
  */
 export const SeinCubeTextureExtension: IGlTFExtension = {
-  name: 'Sein_cubeTexture',
+  name: 'SEIN_cubeTexture',
   init(_, parser: IGlTFParser) {
     const game: Game = parser.game;
     const actions = [];
@@ -421,7 +421,7 @@ export const SeinCubeTextureExtension: IGlTFExtension = {
  * @hidden
  */
 export const SeinImageBasedLightingExtension: IGlTFExtension<ISeinImageBasedLightingExtension> = {
-  name: 'Sein_imageBasedLighting',
+  name: 'SEIN_imageBasedLighting',
   init(_, parser: IGlTFParser) {
     const game: Game = parser.game;
     const extensions = parser.json.extensions || {};
@@ -527,7 +527,7 @@ export const SeinImageBasedLightingExtension: IGlTFExtension<ISeinImageBasedLigh
  * @hidden
  */
 export const SeinAtlasExtension: IGlTFExtension = {
-  name: 'Sein_atlas',
+  name: 'SEIN_atlas',
   init(_, parser: IGlTFParser) {
     const game: Game = parser.game;
     const actions = [];
@@ -588,7 +588,7 @@ export const SeinAtlasExtension: IGlTFExtension = {
  * 这里的扩展仅仅是全局用于加载材质脚本的。
  */
 export const SeinCustomMaterialExtension: IGlTFExtension = {
-  name: 'Sein_customMaterial',
+  name: 'SEIN_customMaterial',
   cache: {},
   init(_, parser: IGlTFParser) {
     const actions = [];
@@ -632,7 +632,7 @@ export class FakeHiloSprite extends Hilo3d.Node {
  * @hidden
  */
 export const SeinSpriteExtension: IGlTFExtension<ISeinSpriteExtension> = {
-  name: 'Sein_sprite',
+  name: 'SEIN_sprite',
   init(_, parser: IGlTFParser) {
     const extensions = parser.json.extensions || {};
     const ex: ISeinSpriteSourceExtension = extensions.Sein_sprite || {};
@@ -666,7 +666,7 @@ export const SeinSpriteExtension: IGlTFExtension<ISeinSpriteExtension> = {
  * @hidden
  */
 export const SeinSkyboxExtension: IGlTFExtension<ISeinSkyboxExtension> = {
-  name: 'Sein_skybox',
+  name: 'SEIN_skybox',
   parse(info: ISeinSkyboxExtension, parser: IGlTFParser, entity: any) {
     const camera = entity;
 
@@ -699,7 +699,7 @@ export const SeinSkyboxExtension: IGlTFExtension<ISeinSkyboxExtension> = {
  * @hidden
  */
 export const SeinTextureImproveExtension: IGlTFExtension<ISeinTextureImproveExtension> = {
-  name: 'Sein_textureImprove',
+  name: 'SEIN_textureImprove',
   parse(info: ISeinTextureImproveExtension, parser: IGlTFParser, texture: Texture) {
     texture.isImageCanRelease = info.isImageCanRelease;
     texture.anisotropic = info.anisotropic || texture.anisotropic;
