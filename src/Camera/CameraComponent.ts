@@ -150,6 +150,8 @@ export default class CameraComponent<IStateTypes extends ICameraState = ICameraS
         material: this._backgroundMat
       });
     }
+
+    this._background.frustumTest = false;
   }
 
   protected onCreateCamera(initState: Partial<IStateTypes>): Hilo3d.Camera {
