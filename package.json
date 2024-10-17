@@ -62,7 +62,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.27.1",
     "dts-bundle": "^0.7.3",
-    "express": "4.19.2",
+    "express": "4.20.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.10.1",
     "hana-ui": "^1.2.2",
